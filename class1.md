@@ -50,40 +50,48 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
   <dd>The inner workings and functionality of a website or application.</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
 </dl>
 
+Note:
+This will only display in the notes window.
+
 ---
 
 ## Clients &amp; Servers
 
-How your computer accesses website.
-
 ![](gdi/images/client-server.png) <!-- .element: class="no-border" -->
 
-* JavaScript is "client side"
-* Your browser understands it!
-* JavaScript is also "server side" (node.js)
+* JavaScript runs "client side" <!-- .element: class="fragment" -->
+* JavaScript also runs "server side" (node.js)  <!-- .element: class="fragment" -->
 
 ---
 
 ## Tools
 
 <dl>
-  <dt>Browser</dt>
-  <dd>Chrome, Firefox</dd>
-  <dt>Development Toolkit</dt>
+  <dt>Browser</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dd>Chrome, Firefox</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+  <dt>Development Toolkit</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
   <dd>
     [TextWrangler - Mac](http://www.barebones.com/products/textwrangler)<br>
     [Notepad ++ - Windows](http://notepad-plus-plus.org)<br>
     [Sublime Text - Mac or Windows](http://www.sublimetext.com/)
-  </dd>
+  </dd> <!-- .element: class="fragment" data-fragment-index="2" -->
 </dl>
 
 ---
 
-## Javascript is Not Java
+## what is javascript?
+
+The most popular language on Github.  <!-- .element: class="fragment" data-fragment-index="1" -->
+![Girl Develop It](gdi/images/popularity-on-github.png) <!-- .element: class="no-border fragment" data-fragment-index="1" -->
+
+---
+
+## javascript is not java
 
 <dl>
   <dt>Java</dt>
-  <dd>Development platform designed by Sun Microsystems</dd>
+  <dd>Development platform designed by sun microsystems</dd>
   <dt>Javascript</dt>
   <dd>Client &amp; server-side scripting language</dd>
 </dl>
@@ -116,7 +124,7 @@ How your computer accesses website.
 
 ---
 
-## What Does Javascript Do?
+## What Can Javascript Do?
 
 <dl>
   <dt>Carousels</dt>
@@ -131,7 +139,22 @@ How your computer accesses website.
 
 ---
 
-## What Does Javascript Do?
+## What Can Javascript Do?
+
+<dl>
+  <dt>Graphs</dt>
+  <dd>https://github.com/mbostock/d3/wiki/Gallery</dd>
+  <dt>Physics</dt>
+  <dd>http://wellcaffeinated.net/PhysicsJS/</dd>
+  <dt>Asyncronous Requests</dt>
+  <dd>http://api.jquery.com/jquery.ajax/</dd>
+  <dt>Web Servers<dt>
+  <dd>https://nodejs.org/</dd>
+</dl>
+
+---
+
+## What Can Javascript Do?
 
 <dl>
   <dt>Event Handling</dt>
@@ -144,7 +167,7 @@ How your computer accesses website.
   <dd>http://lab.hakim.se/reveal-js</dd>
 </dl>
 
-...and countless other things.
+...and countless other things. <!-- .element: class="fragment" -->
 
 ---
 
@@ -611,9 +634,3 @@ Add a link to the html that calls the function when it is clicked
 ---
 
 ## Questions?
-
-
-
-
-
-

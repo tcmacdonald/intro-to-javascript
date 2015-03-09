@@ -5,9 +5,11 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+/*
 $(document).ready(function(){
-  i = getParameterByName('i');
+  var i = getParameterByName('i');
+  if(i == undefined){ i = 1; }
   var el = $('[data-markdown]')
   el.attr('data-markdown', 'gdi/class' + i + '.md')
 });
-
+*/
