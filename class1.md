@@ -42,16 +42,29 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
   <dt>Web Development</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
   <dd>The process of programming dynamic web applications.</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
-
-  <dt>Front-End</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dd>The outwardly visible elements of a website or application.</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
-
-  <dt>Back-End</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
-  <dd>The inner workings and functionality of a website or application.</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
 </dl>
 
 Note:
-This will only display in the notes window.
+Web design is the look and feel.
+
+Web development is the code... a generic term for the process of creating dynamic, online applications.
+
+---
+
+## Vocabulary
+
+<dl>
+  <dt>Client</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dd>The computer requesting the web page.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+  <dt>Server</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <dd>The computer responding to the request and returning HTML.</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
+</dl>
+
+Note:
+When you load a webpage in your browser, you are the client.
+
+The computer that returns HTML is the server.
 
 ---
 
@@ -59,8 +72,29 @@ This will only display in the notes window.
 
 ![](gdi/images/client-server.png) <!-- .element: class="no-border" -->
 
-* JavaScript runs "client side" <!-- .element: class="fragment" -->
-* JavaScript also runs "server side" (node.js)  <!-- .element: class="fragment" -->
+JavaScript runs "client side" <!-- .element: class="fragment" -->
+
+JavaScript also runs "server side" (node.js)  <!-- .element: class="fragment" -->
+
+Note:
+Here is a picture of this transaction...
+
+Traditionally, Javascript has always been associated with the client side.
+
+---
+
+## More Vocabulary
+
+<dl>
+  <dt>Front-End</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <dd>The outwardly visible elements of a website or application. (Client Side)</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
+
+  <dt>Back-End</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
+  <dd>The inner workings and functionality of a website or application. (Server Side)</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
+</dl>
+
+Note:
+Any questions?
 
 ---
 
@@ -68,15 +102,25 @@ This will only display in the notes window.
 
 <dl>
   <dt>Browser</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>Chrome, Firefox</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dd>Chrome &amp; Firefox, Safari? (not IE)</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
 
-  <dt>Development Toolkit</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <dt>Development</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
   <dd>
+    [Sublime Text - Mac or Windows](http://www.sublimetext.com/)<br>
     [TextWrangler - Mac](http://www.barebones.com/products/textwrangler)<br>
     [Notepad ++ - Windows](http://notepad-plus-plus.org)<br>
-    [Sublime Text - Mac or Windows](http://www.sublimetext.com/)
   </dd> <!-- .element: class="fragment" data-fragment-index="2" -->
+
+  <dt>Questions?</dt>
+  <dd>
+    [Google](http://google.com)<br>
+    [Stack Overflow](http://stackoverflow.com)
+    [MDN](https://developer.mozilla.org)
+  </dd>
 </dl>
+
+Note:
+I hope all of you budding developers have started to develop a healthy disdain for Internet Explorer.
 
 ---
 
@@ -85,42 +129,62 @@ This will only display in the notes window.
 The most popular language on Github.  <!-- .element: class="fragment" data-fragment-index="1" -->
 ![Girl Develop It](gdi/images/popularity-on-github.png) <!-- .element: class="no-border fragment" data-fragment-index="1" -->
 
+Note:
+Javascript is everywhere.
+
 ---
 
 ## javascript is not java
 
 <dl>
-  <dt>Java</dt>
-  <dd>Development platform designed by sun microsystems</dd>
-  <dt>Javascript</dt>
-  <dd>Client &amp; server-side scripting language</dd>
+  <dt>Javascript</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dd>Client &amp; server-side scripting language</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dt>Java</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <dd>Development platform designed by Sun Microsystems</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
 </dl>
 
----
+Note:
+What Javascript is not... is Java.
 
-## History of JavaScript
-
-* Developed by Brendan Eich at Netscape, 1995
-* Originally called Livescript
-* Renamed Javascript by Marc Andreesen
+Don't confuse the two.
 
 ---
 
 ## History of JavaScript
 
-* Microsoft releases JScript, 1996
-* Sun and Netscape join forces
-* Standardized by ECMA, 1998
+* Developed by Brendan Eich at Netscape, 1995 <!-- .element: class="fragment" -->
+* Originally called Livescript <!-- .element: class="fragment" -->
+* Sun develops competing technology... HotJava <!-- .element: class="fragment" -->
+* Live script is renamed Javascript by Marc Andreesen <!-- .element: class="fragment" -->
+
+Note:
+Marc Andreesen of Andreeson Horowitz a $4 Billion venture capital firm.
+
+Andreesen Horowitz has invested in companies like Facebook, Twitter, Airbnb, Github, etc.
 
 ---
 
 ## History of JavaScript
 
-* AJAX, 2005
-* jQuery, 2006
-* Google V8, 2008
-* Node, 2010
-* ES6, 2015
+* Microsoft releases JScript, 1996 <!-- .element: class="fragment" data-fragment-index="1" -->
+* Sun and Netscape join forces <!-- .element: class="fragment" data-fragment-index="2" -->
+* Standardized by ECMA, 1998 <!-- .element: class="fragment" data-fragment-index="3" -->
+
+Note:
+Technically, Javascript is a subset of ECMAScript.
+
+---
+
+## History of JavaScript
+
+* AJAX, 2005 <!-- .element: class="fragment" data-fragment-index="1" -->
+* jQuery, 2006 <!-- .element: class="fragment" data-fragment-index="2" -->
+* Google V8, 2008 <!-- .element: class="fragment" data-fragment-index="3" -->
+* Node, 2010 <!-- .element: class="fragment" data-fragment-index="4" -->
+* ES6, 2015 <!-- .element: class="fragment" data-fragment-index="5" -->
+
+Note:
+Who can tell me what the ES in ES6 stands for?
 
 ---
 
@@ -196,6 +260,12 @@ Initialize variable (Give it a value)
 
     bananas = 5;
 
+Note:
+Set the wayback machine to your high school algebra class.
+
+Variables are containers for values.
+
+
 ---
 
 ## Variables
@@ -204,11 +274,10 @@ Declare and initialize at the same time!
 
     var bananas = 5;
 
-Change value of variable.
+Change value of variable. <!-- .element: class="fragment" data-fragment-index="1" -->
 
-    bananas = 4;
-
-(I ate a banana)
+    bananas = 4; 
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -222,6 +291,9 @@ Change value of variable.
 * undefined
 * null
 
+Note:
+A data-type describes what kinds of values can be stored in a variable.
+
 ---
 
 ## Data types
@@ -234,6 +306,8 @@ A group of characters in quotes.
 
     var fruit = "banana";
 
+Note:
+You can use single quotes or double quotes.
 
 ---
 
@@ -249,6 +323,10 @@ Integers or decimals, without quotes.
     var year = 2013;
     var bananaTally = 200;
 
+Note:
+Javascript only has the one Number type.
+
+It's common in other languages to have Integer and Floating Point (decimals) but in JS everything is just a Number.
 
 ---
 
