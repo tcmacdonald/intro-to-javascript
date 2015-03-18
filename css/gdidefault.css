@@ -280,6 +280,9 @@ body {
   .reveal h2.white, .reveal h3.white, .reveal h4.white {
     color: #FFF; }
 
+.reveal .subject {
+  font-size: 135%;
+  margin-bottom: 1em; }
 .reveal dd {
   margin-bottom: 0.3em; }
 .reveal blockquote {

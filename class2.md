@@ -22,7 +22,7 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 * We are here for you&mdash; ask questions! <!-- .element: class="fragment" -->
 * Every question is important. <!-- .element: class="fragment" -->
 * Help each other. <!-- .element: class="fragment" -->
-* Have fun. Be awesome. <!-- .element: class="fragment" -->
+* Have fun. <!-- .element: class="fragment" -->
 
 ---
 
@@ -362,7 +362,7 @@ Previously seen example:
 
 ---
 
-DOM Nodes: Attributes
+## DOM Nodes: Attributes
 
 We can use node methods to set and retrieve attributes...
 
@@ -402,11 +402,12 @@ The document object can create new nodes:
     document.appendChild();
 
     var newImg = document.createElement('img');
-    newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
+        newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
     document.body.appendChild(newImg);
 
     var newParagraph = document.createElement('p');
     var paragraphText = document.createTextNode('New Paragraph!');
+
     newParagraph.appendChild(paragraphText);
     document.body.appendChild(newParagraph);
 
