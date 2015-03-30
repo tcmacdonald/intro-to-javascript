@@ -19,18 +19,18 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Some Rules
 
-* We are here for you&mdash; ask questions! <!-- .element: class="fragment" -->
-* Every question is important. <!-- .element: class="fragment" -->
-* Help each other. <!-- .element: class="fragment" -->
-* Have fun. <!-- .element: class="fragment" -->
+* We are here for you&mdash; ask questions!
+* Every question is important.
+* Help each other.
+* Have fun.
 
 ---
 
 ## Tell Us About Yourself
 
-* Who are you? <!-- .element: class="fragment" -->
-* What do you hope to get out of the class? <!-- .element: class="fragment" -->
-* What is your favorite animal? <!-- .element: class="fragment" -->
+* Who are you?
+* What do you hope to get out of the class?
+* What is your favorite food?
 
 Note:
 Let's start by introducing ourselves.
@@ -40,22 +40,26 @@ Let's start by introducing ourselves.
 ## Tools
 
 <dl>
-  <dt>Browser</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>Chrome &amp; Firefox, Safari? (not IE)</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dt>Browsers</dt>
+  <dd>Chrome &amp; Firefox, Safari? (not IE)</dd>
 
-  <dt>Development</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <dt>Text Editors</dt>
   <dd>
     [Sublime Text - Mac or Windows](http://www.sublimetext.com/)<br>
     [TextWrangler - Mac](http://www.barebones.com/products/textwrangler)<br>
     [Notepad ++ - Windows](http://notepad-plus-plus.org)<br>
-  </dd> <!-- .element: class="fragment" data-fragment-index="2" -->
+  </dd>
 
-  <dt>Questions?</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <dt>Other Online Tools</dt>
   <dd>
-    [Google](http://google.com)<br>
-    [Stack Overflow](http://stackoverflow.com)
-    [MDN](https://developer.mozilla.org)
-  </dd> <!-- .element: class="fragment" data-fragment-index="3" -->
+    JSBin, [http://jsbin.com/](http://jsbin.com/)<br>
+    repl.it, [http://repl.it](http://repl.it)
+  </dd>
+
+  <dt>Questions?</dt>
+  <dd>
+    [Google](http://google.com) (StackOverflow, MDN)
+  </dd>
 </dl>
 
 Note:
@@ -66,28 +70,11 @@ I hope all of you budding developers have started to develop a healthy disdain f
 ## Vocabulary
 
 <dl>
-  <dt>Web Design</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>The process of planning, structuring and creating a website.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dt>Client</dt>
+  <dd>The computer requesting the web page.</dd>
 
-  <dt>Web Development</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>The process of programming dynamic web applications.</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
-</dl>
-
-Note:
-Web design is the look and feel.
-
-Web development is the code... a generic term for the process of creating dynamic, online applications.
-
----
-
-## Vocabulary
-
-<dl>
-  <dt>Client</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>The computer requesting the web page.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
-
-  <dt>Server</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>The computer responding to the request and returning HTML.</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <dt>Server</dt>
+  <dd>The computer responding to the request and returning HTML.</dd>
 </dl>
 
 Note:
@@ -99,11 +86,11 @@ The computer that returns HTML is the server.
 
 ## Clients &amp; Servers
 
-![](gdi/images/client-server.png) <!-- .element: class="no-border" -->
+![](gdi/images/client-server.png)
 
-JavaScript runs "client side" <!-- .element: class="fragment" -->
+JavaScript runs "client side"
 
-JavaScript also runs "server side" (node.js)  <!-- .element: class="fragment" -->
+JavaScript also runs "server side" (node.js)
 
 Note:
 Here is a picture of this transaction...
@@ -115,11 +102,11 @@ Traditionally, Javascript has always been associated with the client side.
 ## More Vocabulary
 
 <dl>
-  <dt>Front-End</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dd>The outwardly visible elements of a website or application. (Client Side)</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <dt>Front-End</dt>
+  <dd>The outwardly visible elements of a website or application. (Client Side)</dd>
 
-  <dt>Back-End</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
-  <dd>The inner workings and functionality of a website or application. (Server Side)</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
+  <dt>Back-End</dt>
+  <dd>The inner workings and functionality of a website or application. (Server Side)</dd>
 </dl>
 
 Note:
@@ -131,8 +118,8 @@ Any questions?
 
 ## what is javascript?
 
-The most popular language on Github.  <!-- .element: class="fragment" data-fragment-index="1" -->
-![Girl Develop It](gdi/images/popularity-on-github.png) <!-- .element: class="no-border fragment" data-fragment-index="1" -->
+The most popular language on Github.
+![Girl Develop It](gdi/images/popularity-on-github.png) <!-- .element: class="no-border" -->
 
 Note:
 Javascript is everywhere.
@@ -141,9 +128,9 @@ Javascript is everywhere.
 
 ## what is javascript?
 
-* The most widely deployed language in history. <!-- .element: class="fragment" -->
-* Quirky and misunderstood. <!-- .element: class="fragment" -->
-* Small but fierce. <!-- .element: class="fragment" -->
+* The most widely deployed language in history.
+* Quirky and misunderstood.
+* Small but super fast.
 
 Note:
 If you have a smartphone or computer, you can run Javascript.
@@ -161,10 +148,10 @@ Javascript syntax is similar to that of C &amp; shares similarities to other lan
 ## javascript is not java
 
 <dl>
-  <dt>Javascript</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>Client &amp; server-side scripting language</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dt>Java</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>Development platform designed by Sun Microsystems</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <dt>Javascript</dt>
+  <dd>Client &amp; server-side scripting language</dd>
+  <dt>Java</dt>
+  <dd>Development platform designed by Sun Microsystems</dd>
 </dl>
 
 Note:
@@ -176,10 +163,10 @@ Don't confuse the two.
 
 ## History of JavaScript
 
-* Developed by Brendan Eich at Netscape, 1995 <!-- .element: class="fragment" -->
-* Originally called Livescript <!-- .element: class="fragment" -->
-* Sun develops competing technology... HotJava <!-- .element: class="fragment" -->
-* Livescript is renamed Javascript by Marc Andreesen <!-- .element: class="fragment" -->
+* Developed by Brendan Eich at Netscape, 1995
+* Originally called Livescript
+* Sun develops competing technology... HotJava
+* Livescript is renamed Javascript by Marc Andreesen
 
 Note:
 Marc Andreesen of Andreeson Horowitz a $4 Billion venture capital firm.
@@ -190,9 +177,9 @@ Andreesen Horowitz has invested in companies like Facebook, Twitter, Airbnb, Git
 
 ## History of JavaScript
 
-* Microsoft releases JScript, 1996 <!-- .element: class="fragment" data-fragment-index="1" -->
-* Sun and Netscape join forces <!-- .element: class="fragment" data-fragment-index="2" -->
-* Standardized by ECMA, 1998 <!-- .element: class="fragment" data-fragment-index="3" -->
+* Microsoft releases JScript, 1996
+* Sun and Netscape join forces
+* Standardized by ECMA, 1998
 
 Note:
 Technically, Javascript is a subset of ECMAScript.
@@ -203,13 +190,22 @@ Things were pretty quiet after 1998 until...
 
 ## History of JavaScript
 
-* AJAX, 2005 <!-- .element: class="fragment" data-fragment-index="1" -->
-* jQuery, 2006 <!-- .element: class="fragment" data-fragment-index="2" -->
-* Google V8, 2008 <!-- .element: class="fragment" data-fragment-index="3" -->
-* Node, 2010 <!-- .element: class="fragment" data-fragment-index="4" -->
-* ES6, 2015 <!-- .element: class="fragment" data-fragment-index="5" -->
+* AJAX (asynchronous requests), 2005
+* jQuery (utility library), 2006
+* Google V8 (javascript implementation), 2008
+* Node (web server), 2010
+* ES6 (next incarnation), 2015
 
 Note:
+<b>AJAX</b>  
+In programming, "synchronous" refers to executing statements in order. Each statement has to wait for the previous one to finish executing.
+
+For example: if you want to load your latest tweets onto a web page, and you do this synchronously, then a visitor to your site won’t be able to do anything until those tweets are loaded.
+
+<b>Node</b>  
+Web server written on top of the Google V8 engine. Capable of handling alot more concurrent requests than contemporary web servers.
+
+<b>ES6</b>  
 Who can tell me what the ES in ES6 stands for?
 
 ---
@@ -217,14 +213,14 @@ Who can tell me what the ES in ES6 stands for?
 ## What Can Javascript Do?
 
 <dl>
-  <dt>Carousels</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>http://kenwheeler.github.io/slick</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dt>Accordions</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>http://sandbox.scriptiny.com/javascript-accordion</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dt>Modal Windows</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dd>http://bootboxjs.com</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dt>Games</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
-  <dd>http://mario5.florian-rappl.de/#game</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
+  <dt>Carousels</dt>
+  <dd>http://kenwheeler.github.io/slick</dd>
+  <dt>Accordions</dt>
+  <dd>http://sandbox.scriptiny.com/javascript-accordion</dd>
+  <dt>Modal Windows</dt>
+  <dd>http://bootboxjs.com</dd>
+  <dt>Games</dt>
+  <dd>http://mario5.florian-rappl.de/#game</dd>
 </dl>
 
 ---
@@ -232,14 +228,14 @@ Who can tell me what the ES in ES6 stands for?
 ## What Can Javascript Do?
 
 <dl>
-  <dt>Graphs</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>https://github.com/mbostock/d3/wiki/Gallery</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dt>Physics</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>http://wellcaffeinated.net/PhysicsJS/</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dt>Asyncronous Requests</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dd>http://api.jquery.com/jquery.ajax/</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dt>Web Servers</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
-  <dd>https://nodejs.org/</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
+  <dt>Graphs</dt> 
+  <dd>https://github.com/mbostock/d3/wiki/Gallery</dd> 
+  <dt>Physics</dt> 
+  <dd>http://wellcaffeinated.net/PhysicsJS/</dd> 
+  <dt>Asyncronous Requests</dt> 
+  <dd>http://api.jquery.com/jquery.ajax/</dd> 
+  <dt>Cookies &amp; Local Storage</dt> 
+  <dd>https://mdn.io/cookie/</dd> 
 </dl>
 
 ---
@@ -247,48 +243,48 @@ Who can tell me what the ES in ES6 stands for?
 ## What Can Javascript Do?
 
 <dl>
-  <dt>Event Handling</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dd>http://api.jquery.com/category/events/</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <dt>Form Validation</dt> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dd>http://parsleyjs.org</dd> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <dt>Embedded Maps</dt> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dd>https://developers.google.com/maps/web/</dd> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <dt>Presentations</dt> <!-- .element: class="fragment" data-fragment-index="4" -->
-  <dd>http://lab.hakim.se/reveal-js</dd> <!-- .element: class="fragment" data-fragment-index="4" -->
+  <dt>Event Handling</dt> 
+  <dd>http://api.jquery.com/category/events/</dd> 
+  <dt>Form Validation</dt> 
+  <dd>http://parsleyjs.org</dd> 
+  <dt>Embedded Maps</dt> 
+  <dd>https://developers.google.com/maps/web/</dd> 
+  <dt>Presentations</dt> 
+  <dd>http://lab.hakim.se/reveal-js</dd> 
 </dl>
 
-...and countless other things. <!-- .element: class="fragment" data-fragment-index="5" -->
+...and countless other things. 
 
 ---
 
 ## Syntax
 
-* Each line in JavaScript is an instruction. <!-- .element: class="fragment" data-fragment-index="1" -->
-* Every instruction ends with a semicolon. <!-- .element: class="fragment" data-fragment-index="2" -->
-* When the browser reads it, it "executes the script". <!-- .element: class="fragment" data-fragment-index="3" -->
+* Each line in JavaScript is an instruction. 
+* Every instruction ends with a semicolon. 
+* When the browser reads it, it "executes the script". 
 
 <br>
 
     console.log('Hello');
-<!-- .element: class="fragment" data-fragment-index="4" -->
-<p>Try it out on [repl.it](http://repl.it)</p> <!-- .element: class="fragment" data-fragment-index="4" -->
+
+<p>Try it out on [jsbin.com](http://jsbin.com)</p> 
 
 ---
 
 ## Variables
 
-* Variables hold content <!-- .element: class="fragment" data-fragment-index="1" -->
-* Words, numbers, dates, true/false values and more <!-- .element: class="fragment" data-fragment-index="2" -->
+* Variables hold content 
+* Words, numbers, dates, true/false values and more 
 
-Declare a variable (Give it a name) <!-- .element: class="fragment" data-fragment-index="3" -->
+Declare a variable (Give it a name) 
 
     var bananas;
-<!-- .element: class="fragment" data-fragment-index="3" -->
 
-Initialize variable (Give it a value) <!-- .element: class="fragment" data-fragment-index="4" -->
+
+Initialize variable (Give it a value) 
 
     bananas = 5;
-<!-- .element: class="fragment" data-fragment-index="4" -->
+
 
 Note:
 Remember your high school algebra class?
@@ -299,27 +295,27 @@ Variables are containers for values.
 
 ## Variables
 
-Declare and initialize at the same time! <!-- .element: class="fragment" data-fragment-index="1" -->
+Declare and initialize at the same time! 
 
     var bananas = 5;
-<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Change value of variable. <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Change value of variable. 
 
     bananas = 4; 
-<!-- .element: class="fragment" data-fragment-index="2" -->
+
 
 ---
 
 ## Data types
 
-* String <!-- .element: class="fragment" -->
-* Number <!-- .element: class="fragment" -->
-* Boolean <!-- .element: class="fragment" -->
-* Array <!-- .element: class="fragment" -->
-* Object <!-- .element: class="fragment" -->
-* undefined <!-- .element: class="fragment" -->
-* null <!-- .element: class="fragment" -->
+* String 
+* Number 
+* Boolean 
+* Array 
+* Object 
+* undefined 
+* null 
 
 Note:
 A data-type describes what kinds of values can be stored in a variable.
@@ -330,12 +326,12 @@ A data-type describes what kinds of values can be stored in a variable.
 
 ### String
 
-http://mdn.io/string <!-- .element: class="fragment" -->
+http://mdn.io/string 
 
-A group of characters in quotes. <!-- .element: class="fragment" -->
+A group of characters in quotes. 
 
     var fruit = "banana";
-<!-- .element: class="fragment" -->
+
 
 Note:
 You can use single quotes or double quotes.
@@ -346,14 +342,14 @@ You can use single quotes or double quotes.
 
 ### Number
 
-http://mdn.io/number <!-- .element: class="fragment" -->
+http://mdn.io/number 
 
-Integers or decimals, without quotes. <!-- .element: class="fragment" -->
+Integers or decimals, without quotes. 
 
     var pi = 3.14;
     var year = 2013;
     var bananaTally = 200;
-<!-- .element: class="fragment" -->
+
 
 Note:
 Javascript only has the one Number type.
@@ -367,13 +363,13 @@ It's common in other languages to have Integer and Floating Point (decimals) but
 
 ### Boolean
 
-http://mdn.io/boolean <!-- .element: class="fragment" -->
+http://mdn.io/boolean 
 
-True or False <!-- .element: class="fragment" -->
+True or False 
 
     var skyIsBlue = true;
     var grassIsPink = false;
-<!-- .element: class="fragment" -->
+
 
 ---
 
@@ -381,13 +377,13 @@ True or False <!-- .element: class="fragment" -->
 
 ### Array
 
-http://mdn.io/array <!-- .element: class="fragment" -->
+http://mdn.io/array 
 
-Collections of values. <!-- .element: class="fragment" -->
+Collections of values. 
 
     var numbers = [1,2,3,4,5];
     var socks = new Array('pink', 'striped', 'business');
-<!-- .element: class="fragment" -->
+
 
 ---
 
@@ -395,12 +391,12 @@ Collections of values. <!-- .element: class="fragment" -->
 
 ### Object
 
-http://mdn.io/object <!-- .element: class="fragment" -->
+http://mdn.io/object 
 
-Container for key, value pairs. <!-- .element: class="fragment" -->
+Container for key, value pairs. 
 
     var animals = { cat: 'Fluffy', dog: 'Fido' };
-<!-- .element: class="fragment" -->
+
 
 ---
 
@@ -408,12 +404,12 @@ Container for key, value pairs. <!-- .element: class="fragment" -->
 
 ### undefined
 
-http://mdn.io/undefined <!-- .element: class="fragment" -->
+http://mdn.io/undefined 
 
-Has not been assigned a value. <!-- .element: class="fragment" -->
+Has not been assigned a value. 
 
     var favoriteDinosaur;
-<!-- .element: class="fragment" -->
+
 
 ---
 
@@ -421,48 +417,48 @@ Has not been assigned a value. <!-- .element: class="fragment" -->
 
 ### null
 
-http://mdn.io/null <!-- .element: class="fragment" -->
+http://mdn.io/null 
 
-A purposely empty value (not the same as 0) <!-- .element: class="fragment" -->
+A purposely empty value (not the same as 0) 
 
     var favoriteAnimal = null;
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## Naming rules
 
-* Begin with a letter, _, or $ <!-- .element: class="fragment" -->
-* Can contain letters, numbers, _ and $ <!-- .element: class="fragment" -->
+* Begin with a letter, _, or $ 
+* Can contain letters, numbers, _ and $ 
 
 
     var hello;
     var _hello;
     var $hello;
     var hello2;
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## Naming rules
 
-Names are case sensitive <!-- .element: class="fragment" -->
+Names are case sensitive 
 
     var hello;
     var Hello;
     var heLLO;
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## Expressions
 
-Math-y expressions! <!-- .element: class="fragment" -->
+Math-y expressions! 
 
     var bananas = 5;
     var oranges = 2;
     var fruit = bananas + oranges;
-<!-- .element: class="fragment" -->
+
 
 Note:
 An expression is any valid unit of code that resolves to a value.
@@ -480,7 +476,7 @@ An expression is any valid unit of code that resolves to a value.
 |%|Modulus|
 |++|Increment|
 |--|Decrement|
-<!-- .element: class="fragment" -->
+
 
 Note:
 Modulus divides the value of one expression by the value of another, and returns the remainder.
@@ -489,18 +485,20 @@ Modulus divides the value of one expression by the value of another, and returns
 
 ## Expressions
 
-Word-y expressions! <!-- .element: class="fragment" -->
+Word-y expressions! 
 
-    var name = "Mitch";
-    var animal = "Red Panda";
-    var sentence = "My animal is a " + animal + ". Its name is " + name + ".";
-<!-- .element: class="fragment" -->
+    var subject = "cold beverages";
+    var sentence = "I like " + subject + ".";
+
+
+Note:
+When the plus operator is used in conjunction with strings, it will "concatenate" the two strings.
 
 ---
 
 ## Let's Develop It
 
-Create a new HTML file. <!-- .element: class="fragment" -->
+Create a new HTML file. 
 
     <html>
       <head>
@@ -510,15 +508,15 @@ Create a new HTML file. <!-- .element: class="fragment" -->
         My site!
       </body>
     </html>
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## Let's Develop It
 
-Create a new javascript file (a file that ends in .js) <!-- .element: class="fragment" -->
+Create a new javascript file (a file that ends in .js) 
 
-Link it to your html file <!-- .element: class="fragment" -->
+Link it to your html file 
 
     <html>
       <head>
@@ -529,57 +527,49 @@ Link it to your html file <!-- .element: class="fragment" -->
         My site!
       </body>
     </html>
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## Let's Develop It
 <br>
-**Lifetime supply calculator** <!-- .element: class="fragment" -->
+**Lifetime supply calculator** 
 
-Ever wonder how much a lifetime supply of your favorite snack or drink is? <!-- .element: class="fragment" -->
+Ever wonder how much a lifetime supply of your favorite snack or drink is? 
 
 ---
 
 ## Lifetime supply calculator
 
-Ever wonder how much a lifetime supply of your favorite snack or drink is? <!-- .element: class="fragment" -->
-
-* Store your age in a variable <!-- .element: class="fragment" -->
-* Store your maximum age in a variable <!-- .element: class="fragment" -->
-* Store an estimated amount per day in a variable <!-- .element: class="fragment" -->
-* Calculate how many you would eat/drink for the rest of your life. <!-- .element: class="fragment" -->
-* Output the result in an alert(see below) like so: "You will need NN to last you until your old age of NN" <!-- .element: class="fragment" -->
+1. Store your age in a variable 
+1. Store your maximum age in a variable 
+1. Store an estimated amount per day in a variable 
+1. Calculate how many you would eat/drink in your lifetime 
+1. Output the result in an alert...
 
 
     alert(answer);
-<!-- .element: class="fragment" -->
+
 
 ---
 
 ## The if statement
 
-Javascript can run through code based on conditions <!-- .element: class="fragment" -->
+Javascript can run through code based on conditions 
 
     if (condition here){
       // statement to execute
     }
-<!-- .element: class="fragment" -->
+
+
+An example...
+
 
     var bananas = 1;
     if (bananas < 2){
       console.log("Buy more bananas!")
     }
-<!-- .element: class="fragment" -->
 
-Note: you can write comments that only you, not the browser reads <!-- .element: class="fragment" -->
-
-    // comment on one line
-    /*
-      comment on
-      multiple lines
-    */
-<!-- .element: class="fragment" -->
 
 ---
 
@@ -593,36 +583,48 @@ Note: you can write comments that only you, not the browser reads <!-- .element:
 |>=|Greater than or equal to|
 |<|Less than|
 |<=|Less than or equal to|
-<!-- .element: class="fragment" -->
 
-Don't confuse = (assign a value) with === (compare a value) <!-- .element: class="fragment" -->
+
+Don't confuse = (assign a value) with === (compare a value) 
 
 Note:
 The 3 equal signs mean "equality without type coercion". Using the triple equals, the values must be equal in type as well.
 
 ---
 
-## Comparisons
+## Chaining Conditions
+
+Compound conditions with two ampersands (&&)...
+
+
+    var bananas = 5;
+    var oranges = 2;
+
+    if (bananas > 3 && oranges > 3) {
+      console.log('Eat fruit!');
+    }
+
+
+
+---
+
+## Chaining Conditions
 
 |Symbol|Meaning|
 |---|---|
 |&&|AND|
 |&#124;&#124;|OR|
 |!|NOT|
-<!-- .element: class="fragment" -->
 
-    var bananas = 5;
-    var oranges = 2;
-    if (bananas > 3 && oranges > 3){
-      console.log('Eat fruit!');
-    }
-    if (bananas < 2 || oranges < 2){
+
+    if (bananas < 2 || oranges < 2) {
       console.log('Buy fruit!');
     }
-    if (!(bananas >= 0)){
+
+    if ( !(bananas >= 0) ) {
       console.log('You have negative bananas??');
     }
-<!-- .element: class="fragment" -->
+
 
 ---
 
