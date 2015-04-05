@@ -1,0 +1,61 @@
+// Default mixins and settings -----------------
+@import "mixins";
+@import "settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+$linkColor: #01A9B4;
+// Background generator
+@mixin bodyBackground() {
+  background: #242424;
+}
+
+// Theme template ------------------------------
+@import "white";
+// ---------------------------------------------
+
+.reveal {
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0.5em;
+    &.white {
+      color: #FFF;
+    }
+  }
+}
+
+.reveal {
+  .subject {
+    font-size: 135%;
+    margin-bottom: 1em;
+  }
+  dd {
+    margin-bottom: 0.3em;
+  }
+
+  blockquote {
+    margin: 1em 0;
+    padding: 1em;
+    background: lighten($backgroundColor, 5);  
+  }
+
+  pre > code {
+    font-size: 1.5em;
+    margin: 1em 0;
+    padding: 0.4em 0.6em;
+    text-align: left;
+    line-height: 1.1em;
+    font-family: monospace;
+    font-weight: normal;
+  }
+
+  img {
+    &.no-border {
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+  }
+}
+
