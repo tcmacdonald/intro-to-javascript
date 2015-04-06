@@ -4,23 +4,36 @@
 // ---------------------------------------------
 
 // Override theme settings (see ../template/settings.scss)
-$linkColor: #01A9B4;
+$mainColor: #333;
+$headingLetterSpacing: 0;
+$headingTextShadow: none;
+$backgroundColor: #f7fbfc;
+$linkColor: #92BB44;
+$selectionBackgroundColor: #134674;
+
 // Background generator
 @mixin bodyBackground() {
-  background: #242424;
+  @include radial-gradient( lighten(#EDAB23, 40% ), #f7fbfc );
 }
 
 // Theme template ------------------------------
-@import "white";
+@import "moon";
 // ---------------------------------------------
 
 .reveal {
+  h1,
   h2,
   h3,
   h4 {
+    text-shadow: none;
     margin-bottom: 0.5em;
-    &.white {
-      color: #FFF;
+    & > small.gray,
+    &.gray {
+      color: #AAA;
+    }
+    & > small.dark,
+    &.dark {
+      color: #222;
     }
   }
 }
@@ -41,7 +54,7 @@ $linkColor: #01A9B4;
   }
 
   pre > code {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 1em 0;
     padding: 0.4em 0.6em;
     text-align: left;

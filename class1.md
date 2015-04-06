@@ -1,13 +1,11 @@
-![Girl Develop It](gdi/images/white-logo.png) <!-- .element: class="no-border" -->
+![Girl Develop It](gdi/images/gdi-ample.png) <!-- .element: class="no-border" -->
 
 ---
 
-# Intro to Javascript <small>Class #1</small>
-<br>
+# Intro to Javascript <small class="gray">Class #1</small>
 
-### Taylor C. MacDonald  <!-- .element: class="white" -->
-
-tcmacdonald@gmail.com / [@tcmacdonald](http://twitter.com/tcmacdonald)
+### Taylor C. MacDonald  <!-- .element: class="dark" -->
+http://gdi.tcmacdonald.com
 
 ---
 
@@ -39,31 +37,10 @@ Let's start by introducing ourselves.
 
 ## Tools
 
-<dl>
-  <dt>Browsers</dt>
-  <dd>Chrome &amp; Firefox, Safari? (not IE)</dd>
-
-  <dt>Text Editors</dt>
-  <dd>
-    [Sublime Text - Mac or Windows](http://www.sublimetext.com/)<br>
-    [TextWrangler - Mac](http://www.barebones.com/products/textwrangler)<br>
-    [Notepad ++ - Windows](http://notepad-plus-plus.org)<br>
-  </dd>
-
-  <dt>Other Online Tools</dt>
-  <dd>
-    JSBin, [http://jsbin.com/](http://jsbin.com/)<br>
-    repl.it, [http://repl.it](http://repl.it)
-  </dd>
-
-  <dt>Questions?</dt>
-  <dd>
-    [Google](http://google.com) (StackOverflow, MDN)
-  </dd>
-</dl>
-
-Note:
-I hope all of you budding developers have started to develop a healthy disdain for Internet Explorer.
+* __Browser:__ Chrome, [http://google.com/chrome](http://www.google.com/chrome/)
+* __Text Editor:__ Sublime Text 3, [http://sublimetext.com/3](http://www.sublimetext.com/3)
+* __Console:__ JSBin, [http://jsbin.com/](http://jsbin.com/)
+* __Need Help?__: Google (StackOverflow, MDN)
 
 ---
 
@@ -257,6 +234,20 @@ Who can tell me what the ES in ES6 stands for?
 
 ---
 
+## The Most Important<br>Slide of the Day
+
+<br>
+What do you need to be successful in this class?
+
+1. Attention to detail.
+1. Attention to detail.
+1. Attention to detail.
+
+Note:
+Javascript is not forgiving. You will encounter problems if you don't pay attention to all the details.
+
+---
+
 ## Syntax
 
 * Each line in JavaScript is an instruction. 
@@ -287,7 +278,7 @@ Initialize variable (Give it a value)
 
 
 Note:
-Remember your high school algebra class?
+Remember your high school algebra clas 
 
 Variables are containers for values.
 
@@ -304,18 +295,17 @@ Change value of variable.
 
     bananas = 4; 
 
-
 ---
 
 ## Data types
 
-* String 
-* Number 
-* Boolean 
-* Array 
-* Object 
-* undefined 
-* null 
+* String
+* Number
+* Boolean
+* Array
+* Object
+* undefined
+* null
 
 Note:
 A data-type describes what kinds of values can be stored in a variable.
@@ -324,11 +314,11 @@ A data-type describes what kinds of values can be stored in a variable.
 
 ## Data types
 
-### String
+### String <!-- .element: class="dark" -->
 
 http://mdn.io/string 
 
-A group of characters in quotes. 
+A group of characters in quotes.
 
     var fruit = "banana";
 
@@ -340,15 +330,15 @@ You can use single quotes or double quotes.
 
 ## Data types
 
-### Number
+### Number <!-- .element: class="dark" -->
 
 http://mdn.io/number 
 
-Integers or decimals, without quotes. 
+Integers or decimals, without quotes.
 
     var pi = 3.14;
     var year = 2013;
-    var bananaTally = 200;
+    var total_bananas = 200;
 
 
 Note:
@@ -361,93 +351,86 @@ It's common in other languages to have Integer and Floating Point (decimals) but
 ## Data types
 
 
-### Boolean
+### Boolean <!-- .element: class="dark" -->
 
 http://mdn.io/boolean 
 
 True or False 
 
-    var skyIsBlue = true;
-    var grassIsPink = false;
-
+    var sky_is_blue = true;
+    var grass_is_pink = false;
 
 ---
 
 ## Data types
 
-### Array
+### Array <!-- .element: class="dark" -->
 
 http://mdn.io/array 
 
 Collections of values. 
 
     var numbers = [1,2,3,4,5];
-    var socks = new Array('pink', 'striped', 'business');
-
+    var socks = new Array('pink', 'striped', 'argyle');
 
 ---
 
 ## Data types
 
-### Object
+### Object <!-- .element: class="dark" -->
 
 http://mdn.io/object 
 
-Container for key, value pairs. 
+Container for key/value pairs. 
 
     var animals = { cat: 'Fluffy', dog: 'Fido' };
-
 
 ---
 
 ## Data types
 
-### undefined
+### undefined <!-- .element: class="dark" -->
 
 http://mdn.io/undefined 
 
 Has not been assigned a value. 
 
-    var favoriteDinosaur;
+    var favorite_cookie;
 
 
 ---
 
 ## Data types
 
-### null
+### null <!-- .element: class="dark" -->
 
 http://mdn.io/null 
 
 A purposely empty value (not the same as 0) 
 
-    var favoriteAnimal = null;
-
-
----
-
-## Naming rules
-
-* Begin with a letter, _, or $ 
-* Can contain letters, numbers, _ and $ 
-
-
-    var hello;
-    var _hello;
-    var $hello;
-    var hello2;
-
+    var favorite_cookie = null;
 
 ---
 
 ## Naming rules
 
-Names are case sensitive 
+* Functions and variables can start with a letter, _, or $ 
+* Can contain letters, numbers, _ 
 
-    var hello;
-    var Hello;
-    var heLLO;
 
+    var favorite_cookie;
+    var _cookies;
+    var $cookieJar1;
+
+---
+
+## Naming rules
+
+Names are case-sensitive 
+
+    var cookie;
+    var Cookie;
+    var COOKIE;
 
 ---
 
@@ -459,7 +442,6 @@ Math-y expressions!
     var oranges = 2;
     var fruit = bananas + oranges;
 
-
 Note:
 An expression is any valid unit of code that resolves to a value.
 
@@ -469,13 +451,13 @@ An expression is any valid unit of code that resolves to a value.
 
 |Symbol|Meaning|
 |---|---|
-|+|Addition|
-|-|Subtraction|
-|*|Multiplication|
-|/|Division|
-|%|Modulus|
-|++|Increment|
-|--|Decrement|
+|`+`|Addition|
+|`-`|Subtraction|
+|`*`|Multiplication|
+|`/`|Division|
+|`%`|Modulus|
+|`++`|Increment|
+|`--`|Decrement|
 
 
 Note:
@@ -497,65 +479,35 @@ When the plus operator is used in conjunction with strings, it will "concatenate
 ---
 
 ## Let's Develop It
-
-Create a new HTML file. 
-
-    <html>
-      <head>
-        <title>My Site!</title>
-      </head>
-      <body>
-        My site!
-      </body>
-    </html>
-
-
----
-
-## Let's Develop It
-
-Create a new javascript file (a file that ends in .js) 
-
-Link it to your html file 
-
-    <html>
-      <head>
-        <title>My Site!</title>
-        <script src="javascript.js"></script>
-      </head>
-      <body>
-        My site!
-      </body>
-    </html>
-
-
----
-
-## Let's Develop It
 <br>
 **Lifetime supply calculator** 
 
-Ever wonder how much a lifetime supply of your favorite snack or drink is? 
+Ever wondered how much a lifetime supply of your favorite snack or drink is? 
 
 ---
 
 ## Lifetime supply calculator
 
-1. Store your age in a variable 
-1. Store your maximum age in a variable 
-1. Store an estimated amount per day in a variable 
-1. Calculate how many you would eat/drink in your lifetime 
-1. Output the result in an alert...
 
+__Step #1:__
+<br>Download  the [Starter Kit](https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip)
 
-    alert(answer);
+__Step #2:__
+<br>Create and initialize the following variables...
 
+1. Your Age
+1. Your Expected Max Age
+1. Estimated Amount Per Day
+
+__Step #3:__
+<br>Calculate how many you'd eat/drink in a lifetime.
+<br>Log _"I'd eat X in my lifetime."_ to the console.
 
 ---
 
 ## The if statement
 
-Javascript can run through code based on conditions 
+Javascript can execute under certain conditions 
 
     if (condition here){
       // statement to execute
@@ -577,25 +529,24 @@ An example...
 
 |Symbol|Meaning|
 |---|---|
-|===|Equality|
-|!==|Inequality|
-|>|Greater than|
-|>=|Greater than or equal to|
-|<|Less than|
-|<=|Less than or equal to|
+|`===`|Equality|
+|`!==`|Inequality|
+|`>`|Greater than|
+|`>=`|Greater than or equal to|
+|`<`|Less than|
+|`<=`|Less than or equal to|
 
 
-Don't confuse = (assign a value) with === (compare a value) 
+Don't confuse `=` (assignment) with `===` (comparison) 
 
 Note:
 The 3 equal signs mean "equality without type coercion". Using the triple equals, the values must be equal in type as well.
 
 ---
 
-## Chaining Conditions
+## Logical Operators
 
-Compound conditions with two ampersands (&&)...
-
+Evaluate two conditions at once with two ampersands (`&&`)
 
     var bananas = 5;
     var oranges = 2;
@@ -604,17 +555,15 @@ Compound conditions with two ampersands (&&)...
       console.log('Eat fruit!');
     }
 
-
-
 ---
 
-## Chaining Conditions
+## Logical Operators
 
 |Symbol|Meaning|
 |---|---|
-|&&|AND|
+|`&&`|AND|
 |&#124;&#124;|OR|
-|!|NOT|
+|`!`|NOT|
 
 
     if (bananas < 2 || oranges < 2) {
@@ -625,12 +574,11 @@ Compound conditions with two ampersands (&&)...
       console.log('You have negative bananas??');
     }
 
-
 ---
 
 ## If/Else Statement
 
-You can use else to perform an alternative action if the "if" fails
+Use `else` to perform an alternative action&hellip;
 
     var bananas = 5;
     if (bananas > 3){
@@ -643,7 +591,7 @@ You can use else to perform an alternative action if the "if" fails
 
 ## If/Else Statement
 
-You can use else if to have multiple choices
+You can use `else if` to have multiple choices
 
     var age = 20;
     if (age >= 35) {
@@ -660,7 +608,7 @@ You can use else if to have multiple choices
 
 ## Let's Develop It
 
-Add an if/else statement to our lifetime supply calculator so that if the lifetime supply is greater than 40,000, you say "Wow! That's a lot!" otherwise, say "You seem pretty reasonable!"
+Add an `if/else` statement to our lifetime supply calculator so that if the lifetime supply is greater than 40,000, you say "Wow! That's a lot!" otherwise say, "Moderation is the best!"
 
 ---
 
@@ -670,13 +618,13 @@ Functions are re-usable collections of statements
 
 Declare a function
 
-    function sayHi(){
+    function hello() {
       console.log('Hi!');
     }
 
-Call the function
+Call the function&hellip;
 
-    sayHi();
+    hello();
 
 ---
 
@@ -685,14 +633,17 @@ Call the function
 Functions can take named arguments
 
 
-    function sayHi(name){
+    function hello(name) {
       console.log('Hi' + name + '!');
     }
-    sayHi('Mitch, the Red Panda');
-    sayHi('Harold, the hippo');
 
-    var name = 'Pip, the mouse';
-    sayHi(name);
+Call the function&hellip;
+
+    hello('Mitch, the Red Panda');
+    hello('Harold, the hippo');
+
+    var somebody = 'Pip, the mouse';
+    hello(somebody);
 
 ---
 
@@ -700,16 +651,18 @@ Functions can take named arguments
 
 Functions can take MULTIPLE named arguments
 
-    function addNumbers(num1, num2){
+    function add_numbers(num1, num2){
       var result = num1 + num2;
       console.log(result);
     }
 
-    addNumbers(5, 6);
+Call the function&hellip;
+
+    add_numbers(5, 6);
 
     var number1 = 12;
     var number2 = 15;
-    addNumbers(number1, number2);
+    add_numbers(number1, number2);
 
 ---
 
@@ -718,55 +671,71 @@ Functions can take MULTIPLE named arguments
 Functions can return a value
 
 
-    function addNumbers(num1, num2){
+    function add_numbers(num1, num2){
       var result = num1 + num2;
-      return result; //Anything after this line won't be read
+      return result;
     }
-    var sum  = addNumbers(5, 6);
+
+For example&hellip;
+
+    var sum  = add_numbers(5, 6);
+    console.log(sum);
 
 ---
 
 ## Variable Scope
 
-JavaScript variables have "function scope." They are visible in the function where they are defined
+JavaScript variables have two scopes: local and global.
+
+<dl>
+  <dt>Local Scope</dt>
+  <dd>A variable declared inside a function is a local variable and is only accessible within the function.</dd>
+  <dt>Global Scope</dt>
+  <dd>A variable declared outside a function is a global variable, and its value is accessible throughout your program.</dd>
+</dl>
+
+---
+
+## Local Scope
 
 A variable with "local" scope:
 
-    function addNumbers(num1, num2){
+    function add_numbers(num1, num2) {
       var result = num1 + num2;
-      return result; //Anything after this line won't be read
+      return result;
     }
-    var sum  = addNumbers(5, 6);
-    console.log(result); //will return undefined because result only exists inside the addNumbers function
+
+For example&hellip;
+
+    var sum  = add_numbers(5, 6);
+    console.log(result);  // yields 'undefined'
 
 ---
 
-## Variable Scope
-
-JavaScript variables have "function scope." They are visible in the function where they are defined
+## Global Scope
 
 A variable with "global" scope:
 
-
     var result;
-    function addNumbers(num1, num2){
+    function add_numbers(num1, num2){
       result = num1 + num2;
-      return result; //Anything after this line won't be read
+      return result;
     }
-    var sum  = addNumbers(5, 6);
-    console.log(result); //will return 11 because the variable was defined outside the function
+
+For example&hellip;
+
+    var sum  = add_numbers(5, 6);
+    console.log(result); // yields '11'
 
 ---
 
 ## Let's Develop It
 
-Wrap the lifetime supply calculator in a function called calculate()
+Wrap the calculator in a function named `calculate()`
 
-Add a link to the html that calls the function when it is clicked
+Call the function from HTML...
 
-    <a href = "#" onclick="calculate()">
-    Calculate life time supply
-    </a>
+    <a href = "#" onclick="calculate()">Click Me</a>
 
 ---
 
