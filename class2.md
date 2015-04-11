@@ -1,13 +1,11 @@
-![Girl Develop It](gdi/images/white-logo.png) <!-- .element: class="no-border" -->
+![Girl Develop It](gdi/images/gdi-ample.png) <!-- .element: class="no-border" -->
 
 ---
 
-# Intro to Javascript <small>Class #2</small>
-<br>
+# Intro to Javascript <small class="gray">Class #2</small>
 
-### Taylor C. MacDonald  <!-- .element: class="white" -->
-
-tcmacdonald@gmail.com / [@tcmacdonald](http://twitter.com/tcmacdonald)
+### Taylor C. MacDonald  <!-- .element: class="dark" -->
+http://gdi.tcmacdonald.com
 
 ---
 
@@ -19,56 +17,29 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Some Rules
 
-* We are here for you&mdash; ask questions! <!-- .element: class="fragment" -->
-* Every question is important. <!-- .element: class="fragment" -->
-* Help each other. <!-- .element: class="fragment" -->
-* Have fun. <!-- .element: class="fragment" -->
+* We are here for you&mdash; ask questions!
+* Every question is important.
+* Help each other.
+* Have fun.
 
 ---
 
 ## Loops
 
-Sometimes you want to go through a piece of code multiple times. Why?
+_A "loop" is a set of instructions executed over and over again until a certain condition is met._
 
-* Showing a timer count down
-* Displaying the results of a search
-* Adding images to a slideshow
+<br>
+You would use a loop to...
 
----
-
-## The while loop
-
-The while loop tells JS to repeat statements while a condition is true:
-
-
-    while (expression) {
-      // statements to repeat
-    }
-
-
----
-
-## The while loop
-
-    var x = 0;
-    while (x < 5) {
-      console.log(x);
-      x++;
-    }
-
-
-Review: '++' means increment by 1
-
-What happens if we forget x++;?
-
-The loop will never end!
+* Display each item in an array
+* Create X number of divs
+* Manipulate each image on a page
 
 ---
 
 ## The for loop
 
-The for loop is a safer way of looping
-
+Use a <code>for</code> loop, if you know how many times you need to loop.
 
     for (initialize; condition; update) {
       // statements to repeat
@@ -78,19 +49,51 @@ The for loop is a safer way of looping
 
 ## The for loop
 
+An example...
 
     for (var i = 0; i < 5; i++) {
       console.log(i);
     }
 
+Note:
+
 Less danger of an infinite loop. All conditions are at the top!
+
+---
+
+## The while loop
+
+You use while loops, if you don't know how many times you'll loop.
+
+    while (expression) {
+      // statements to repeat
+    }
+
+---
+
+## The while loop
+
+An example...
+
+    var x = 0;
+    while (x < 5) {
+      console.log(x);
+      x++;
+    }
+
+Review: '++' means to increment by 1.
+
+Note:
+What happens if we forget x++;? The loop will never end!
 
 ---
 
 ## Array
 
-An array is a data-type that holds an ordered list of values, of any type:
+_An array is a data-type that holds a list of values._
 
+
+An example...
 
     var arrayName = [element0, element1, ...];
 
