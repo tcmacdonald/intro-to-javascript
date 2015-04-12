@@ -472,7 +472,6 @@ Word-y expressions!
     var subject = "cold beverages";
     var sentence = "I like " + subject + ".";
 
-
 Note:
 When the plus operator is used in conjunction with strings, it will "concatenate" the two strings.
 

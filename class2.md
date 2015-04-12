@@ -24,6 +24,14 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ---
 
+## Review
+
+* What is a variable?
+* What is a data-type?
+* What is a function?
+
+---
+
 ## Loops
 
 _A "loop" is a set of instructions executed over and over again until a certain condition is met._
@@ -34,30 +42,6 @@ You would use a loop to...
 * Display each item in an array
 * Create X number of divs
 * Manipulate each image on a page
-
----
-
-## The for loop
-
-Use a <code>for</code> loop, if you know how many times you need to loop.
-
-    for (initialize; condition; update) {
-      // statements to repeat
-    }
-
----
-
-## The for loop
-
-An example...
-
-    for (var i = 0; i < 5; i++) {
-      console.log(i);
-    }
-
-Note:
-
-Less danger of an infinite loop. All conditions are at the top!
 
 ---
 
@@ -88,6 +72,38 @@ What happens if we forget x++;? The loop will never end!
 
 ---
 
+## The for loop
+
+Use a <code>for</code> loop, if you know how many times you need to loop.
+
+    for (initialize; condition; update) {
+      // statements to repeat
+    }
+
+Note:
+3 statements are passed to the for loop... initialize, condition and update.
+
+* Initialize and declare a number.
+* Check if that number has reached 
+* Update will increment 
+
+
+---
+
+## The for loop
+
+An example...
+
+    for (var i = 0; i < 5; i++) {
+      console.log(i);
+    }
+
+Note:
+
+Less danger of an infinite loop. All conditions are at the top!
+
+---
+
 ## Array
 
 _An array is a data-type that holds a list of values._
@@ -101,13 +117,13 @@ An example...
 
 ## Array
 
-    var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-    var favoriteNumbers = [16, 27, 88];
-    var luckyThings = ['Rainbows', 7, 'Horseshoes'];
+    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+    var numbers = [16, 27, 88];
+    var things = ['Rainbows', 7, 'Horseshoes'];
 
 The length property reports the size of the array:
 
-    console.log(rainbowColors.length);
+    console.log(colors.length);
 
 ---
 
@@ -117,7 +133,7 @@ You can access items with "bracket notation".
 
 The number inside the brackets is called an "index"
 
-    var arrayItem = arrayName[indexNum];
+    var array_item = array_name[index_number];
 
 ---
 
@@ -125,9 +141,9 @@ The number inside the brackets is called an "index"
 
 Arrays in JavaScript are "zero-indexed", which means we start counting from zero.
 
-    var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-    var firstColor = rainbowColors[0];
-    var lastColor = rainbowColors[6];
+    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+    var first_color = colors[0];
+    var last_color = colors[6];
 
 ---
 
@@ -135,16 +151,16 @@ Arrays in JavaScript are "zero-indexed", which means we start counting from zero
 
 Use bracket notation to change the item in an array:
 
-    var awesomeAnimals = ['Corgis', 'Otters', 'Octopi'];
-        awesomeAnimals[0] = 'Bunnies';
+    var animals = ['Corgis', 'Otters', 'Octopi'];
+        animals[0] = 'Bunnies';
 
 Or to add to an array:
 
-    awesomeAnimals[3] = 'Corgis';
+    animals[3] = 'Corgis';
 
 You can also use the push method:
 
-    awesomeAnimals.push('Ocelots');
+    animals.push('Ocelots');
 
 ---
 
@@ -152,21 +168,27 @@ You can also use the push method:
 
 Use a for loop to easily look at each item in an array:
 
-    var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-    for (var i = 0; i < rainbowColors.length; i++) {
-      console.log(rainbowColors[i]);
+    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+
+    for (var i = 0; i < colors.length; i++) {
+      console.log(colors[i]);
     }
 
 ---
 
 ## Let's Develop It
 
-* Add a new link to the exercise from last week
-* Add an onclick to the link for a function called favoriteThings()
-* Create a new function called favoriteThings() in the javascript file
-* In the function, create an array and loop through the results
-* Post the results in an alert "My favorite things are XX, YY, ZZ'
-* Bonus -- add an 'and' in the sentence before the last item
+__Step #1:__
+<br>Download  the [Starter Kit](https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip)
+
+__Step #2:__
+<br>Create a function called `favorites()` which...
+
+1. Creates an array and loops through the items.
+1. Outputs a string to the console which reads...
+
+
+    My favorite things are XX, YY, ZZ.
 
 ---
 
@@ -174,7 +196,7 @@ Use a for loop to easily look at each item in an array:
 
 Objects are a data type that let us store a collection of properties and methods.
 
-    var objectName = { 
+    var objectName = {
       propertyName: propertyValue,
       propertyName: propertyValue,
       ...
@@ -269,39 +291,42 @@ That means we can use a for loop!
 
 ## Objects in functions
 
-You can pass an object into a function as a parameter
+You can pass an object into a function as an argument...
 
-
-    var peanut ={
-      name: "Charlie Brown", 
+    var peanut = {
+      name: "Charlie Brown",
       pet: "Snoopy"
     };
 
-    function describeCharacter(character){
+    function describe(character) {
       console.log(character.name + ' has a pet named ' + character.pet + '.');
     }
 
-    describeCharacter(peanut);
+    describe(peanut);
 
 ---
 
 ## Let's Develop It
 
-* Add another link that calls the function myFriends() onclick
-* Add a new function to the javascript myFriends
-* In the function, create an array of friends objects, with their names and hair colors
-* Use a for loop to go through each friend and describe them
-* Alert the results
-* Bonus -- make a separate functions that describe the friends
+__Step #1:__
+<br>Add a function called `my_friends()` which...
+
+1. Creates an array of friend objects, which defines name and hair color for each of your friends.
+1. Loop through the array and describe each friend in the console.
+
+__Step #2:__
+<br>Make a separate `describe_friend()` function and update `my_friends()` to use that.
 
 ---
 
-## DOM
+## Document Object Model
 
-"Document Object Model"
+_The DOM is a fully object-oriented representation of the web page, and it can be modified with JavaScript._
 
-* A way to interact with the HTML elements on a webpage
-* Chrome and Firefox -- Right click --> Inspect Element
+<br>
+
+See the DOM in Chrome...  
+Hover, Right Click -> Inspect Element
 
 ---
 
@@ -311,7 +336,7 @@ On every webpage, the document object gives us ways of accessing and changing th
 
 Every DOM "node" has properties. They are connected like a family tree.
 
-Parent (parentNode), children (childNodes, firstChild), siblings (prevSibling, nextSibling)
+Parent (`parentNode`), children (`childNodes, firstChild`), siblings (`prevSibling, nextSibling`)
 
     var bodyNode = document.body; // <body>
     var htmlNode = document.body.parentNode; // <html>
@@ -331,8 +356,7 @@ The document object also provides methods for finding DOM nodes without going on
 
 Find element by id
 
-    <img id="mainpicture" src="http://girldevelopit.com/assets/pink-logo.png">
-
+    <img id="mainpicture" src="some-image.png">
 
     var img = document.getElementById('mainpicture');
 
@@ -340,15 +364,15 @@ Find element by id
 
 ## DOM Interaction
 
-Find element by tag name (p, li, div, etc.)
+Find element by tag name (`p`, `li`, `div`, etc.)
 
     <li class="peanut">Charlie Brown</li>
     <li class="peanut">Linus van Pelt</li>
 
 
-    var listItems = document.getElementsByTagName('li');
-    for (var i =0; i < listItems.length; i++) {
-      var listItem = listItems[i];
+    var items = document.getElementsByTagName('li');
+    for (var i =0; i < items.length; i++) {
+      var item = items[i];
     }
 
 ---
@@ -356,7 +380,7 @@ Find element by tag name (p, li, div, etc.)
 ## Methods
 
 * Methods are functions that are associated with an object
-* The affect or return a value for a specific object
+* They affect or return a value for a specific object
 * Used with dot notation
 
 Previously seen example:
@@ -397,30 +421,39 @@ You can also just add to the innerHTML instead of replace everything:
 
 ## DOM Modifying
 
-The document object can create new nodes:
-
+The document object can create new nodes...
 
     document.createElement(tagName);
     document.createTextNode(text);
+
+You can append to the document object too...
+
     document.appendChild();
 
-    var newImg = document.createElement('img');
-        newImg.src = 'http://girldevelopit.com/assets/pink-logo.png';
+---
+
+## DOM Modifying
+
+Some examples...
+
+    var el = document.createElement('img');
+        el.src = 'http://girldevelopit.com/assets/pink-logo.png';
     document.body.appendChild(newImg);
 
-    var newParagraph = document.createElement('p');
-    var paragraphText = document.createTextNode('New Paragraph!');
+&nbsp;
 
-    newParagraph.appendChild(paragraphText);
-    document.body.appendChild(newParagraph);
+    var el = document.createElement('p');
+    var contents = document.createTextNode('New Paragraph!');
+
+    el.appendChild(contents);
+    document.body.appendChild(el);
 
 ---
 
 ## Let's Develop It
 
-* Put it all together
-* Modify your existing three functions to add new elements to the screen instead of fire an alert
-* Keep in mind how to find an element, how to append an element, and how to change the inner html of an element
+* Modify your existing three functions to add new elements to the screen instead of the console.
+* Keep in mind how to find an element, how to append an element, and how to change the inner html of an element.
 * There are lots of possible solutions! Be creative!
 
 ---
