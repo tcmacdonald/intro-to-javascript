@@ -16,11 +16,9 @@
     "url": "https://github.com/tcmacdonald/gdi-tcmacdonald-com/issues"
   },
   "homepage": "https://github.com/tcmacdonald/gdi-tcmacdonald-com",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.12.3",
-    "fs": "0.0.2",
     "jade": "^1.9.2",
-    "morgan": "^1.5.2",
-    "path": "^0.11.14"
+    "morgan": "^1.5.2"
   }
 }
