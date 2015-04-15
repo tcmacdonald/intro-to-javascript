@@ -1,4 +1,4 @@
-![Girl Develop It](gdi/images/gdi-ample.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/gdi-ample.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -63,7 +63,7 @@ The computer that returns HTML is the server.
 
 ## Clients &amp; Servers
 
-![](gdi/images/client-server.png)
+![](/images/client-server.png)
 
 JavaScript runs "client side"
 
@@ -96,7 +96,7 @@ Any questions?
 ## what is javascript?
 
 The most popular language on Github.
-![Girl Develop It](gdi/images/popularity-on-github.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/popularity-on-github.png) <!-- .element: class="no-border" -->
 
 Note:
 Javascript is everywhere.

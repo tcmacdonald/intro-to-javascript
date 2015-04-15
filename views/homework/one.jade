@@ -1,0 +1,32 @@
+extends ../layouts/application.jade
+
+block content
+
+  h1(class='text-center')!= title
+  h2(class='text-center subtitle')!= subtitle
+
+  .row
+    div(class='col-md-8 col-md-offset-2')
+      hr
+      h3 Task #1: Fun With Strings
+      ul
+        li Store the following into variables: number of children, partner's name, geographic location, job title.
+        li Output the following sentence to the console like so: <strong>"You will be a X in Y, and married to Z with N kids."</strong>
+
+      hr
+      h3 Task #2: Fun With Numbers
+      ul
+        li Write a function called <code>square_number</code> that will take one argument (a number), square that number, and return the result. It should also log a string like <strong>"The result of squaring the number 3 is 9."</strong>
+        li Write a function called <code>half_number</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like <strong>"Half of 5 is 2.5."</strong>.
+        li Write a function called <code>percent_of</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like <strong>"2 is 50% of 4."</strong>
+        li Write a function called <code>area_of_circle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like <strong>"The area for a circle with radius 2 is 12.566370614359172."</strong>
+        li <i>Bonus: Round the result so there are only two digits after the decimal.</i>
+
+      hr
+      h3 Task #3: The Calculator
+      ul
+        li Write a function called <code>calculate</code> that will take one argument (a number) and perform the following operations, using the functions you wrote earlier...
+        li Take half of the number and store the result.
+        li Square the result of #1 and store that result.
+        li Calculate the area of a circle with the result of #2 as the radius.
+        li Calculate what percentage that area is of the squared result (#3).

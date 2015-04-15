@@ -8,9 +8,14 @@ var express = require("express"),
 app.set('view engine', 'jade');
 app.use(morgan('combined'));
 
+app.get(/homework\/(one|two)/, function(req,res) {
+  var id = req.params[0];
+  res.render('homework/' + id, { title: 'Intro to Javascript', subtitle: 'Homework for Class ' + id });
+});
+
 app.get(/classes\/(one|two)/, function(req,res) {
   var id = req.params[0];
-  res.render('classes/' + id, { data: '/data/class-' + id + '.md' });
+  res.render('class', { data: '/data/class-' + id + '.md' });
 });
 
 app.get('/', function (req,res) {
