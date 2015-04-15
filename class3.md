@@ -1,13 +1,11 @@
-![Girl Develop It](gdi/images/white-logo.png) <!-- .element: class="no-border" -->
+![Girl Develop It](gdi/images/gdi-ample.png) <!-- .element: class="no-border" -->
 
 ---
 
-# Intro to Javascript <small>Class #3</small>
-<br>
+# Intro to Javascript <small class="gray">Class #1</small>
 
-### Taylor C. MacDonald  <!-- .element: class="white" -->
-
-tcmacdonald@gmail.com / [@tcmacdonald](http://twitter.com/tcmacdonald)
+### Taylor C. MacDonald  <!-- .element: class="dark" -->
+http://gdi.tcmacdonald.com
 
 ---
 
@@ -19,10 +17,10 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Some Rules
 
-* We are here for you&mdash; ask questions! <!-- .element: class="fragment" -->
-* Every question is important. <!-- .element: class="fragment" -->
-* Help each other. <!-- .element: class="fragment" -->
-* Have fun. <!-- .element: class="fragment" -->
+* We are here for you&mdash; ask questions!
+* Every question is important.
+* Help each other.
+* Have fun.
 
 ---
 
