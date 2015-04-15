@@ -1,0 +1,19 @@
+{
+  "name": "gdi.tcmacdonald.com",
+  "version": "1.0.0",
+  "authors": [
+    "Taylor C. MacDonald <tcmacdonald@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.0.0"
+  }
+}

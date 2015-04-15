@@ -1,0 +1,22 @@
+extends ./layouts/application.jade
+
+block content
+  h1(class='text-center')!= title
+
+  div(class='row')
+    div(class='col-md-3 col-sm-6')
+      div(class='panel panel-default')
+        div(class='panel-heading')
+          strong Class #1
+        ul(class='list-group')
+          li(class='list-group-item')
+            a(href='/classes/one') Slides
+          li(class='list-group-item')
+            a(href='http://jsbin.com/bugimu/1/edit?js,console') In-Class Exercises
+            |  (jsbin.com)
+          li(class='list-group-item')
+            a(href='/class1-homework.html') Homework
+          li(class='list-group-item')
+            a(href='https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip') Starter Kit
+            |  (.zip)
+

@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    link(href='/css/reveal.css', rel='stylesheet')
+    link(href='/css/gdilight.css', rel='stylesheet')
+    link(href='/css/zenburn.css', rel='stylesheet')
+    block title
+      title gdi.tcmacdonald.com
+
+  body
+    .reveal
+      .slides
+        section(data-markdown="#{data}", data-separator='^---', data-separator-notes='^Note:')
+
+    script(src='https://code.jquery.com/jquery-2.1.3.min.js')
+    script(src='/bower_components/reveal.js/lib/js/head.min.js')
+    script(src='/bower_components/reveal.js/js/reveal.js')
+
+    script.
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        dependencies: [
+          { src: '/bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/bower_components/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
