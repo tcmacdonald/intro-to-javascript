@@ -22,16 +22,25 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 * Help each other.
 * Have fun.
 
+
+---
+
+## Class Overview
+
+* Introductions
+* Tools &amp; Vocabulary
+* History of Javascript
+* Variables
+* Conditionals
+* Functions
+
 ---
 
 ## Tell Us About Yourself
 
 * Who are you?
 * What do you hope to get out of the class?
-* What is your favorite food?
-
-Note:
-Let's start by introducing ourselves.
+* If you could have lunch with anybody (dead or alive) who would it be?
 
 ---
 
