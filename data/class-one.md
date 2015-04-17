@@ -22,7 +22,6 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 * Help each other.
 * Have fun.
 
-
 ---
 
 ## Class Overview

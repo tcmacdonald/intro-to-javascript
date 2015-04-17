@@ -13,7 +13,7 @@ app.get(/homework\/(one|two)/, function(req,res) {
   res.render('homework/' + id, { title: 'Intro to Javascript', subtitle: 'Homework for Class ' + id });
 });
 
-app.get(/classes\/(one|two)/, function(req,res) {
+app.get(/classes\/(one|two|three)/, function(req,res) {
   var id = req.params[0];
   res.render('class', { data: '/data/class-' + id + '.md' });
 });
