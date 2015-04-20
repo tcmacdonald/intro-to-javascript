@@ -26,10 +26,10 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## What is a library?
 
-* Software libraries hold functions (not books!)
-* When you include a library, you can use all the functions in that library
-* That means: you get to take advantage of other people's experience!
-* And... Save time!
+* Software libraries hold functions
+* Include a library and use it's functions
+* Take advantage of other people's experience
+* And... save time!
 
 ---
 
@@ -49,17 +49,16 @@ jQuery is a library of JavaScript functions.
 * The most popular JavaScript library
 * jQuery empowers you to "write less, do more."
 * Great documentation and tutorials
-* Used by nearly 20 million(!) websites
+* Used by nearly 20 million websites
 
 ---
 
 ## jQuery: A Brief History
 
-* jQuery was created by John Resig, a JavaScript tool developer at Mozilla.
-* January 2006: John announced jQuery at BarCampNYC: BarCampNYC Wrap-up
-* September 2007: A new user interface library is added to jQuery: jQuery UI: Interactions and Widgets
-* September 2008: Microsoft and Nokia announce their support for jQuery
-* December 2009: jQuery wins .Net Magazine's Award for Best Open Source Application
+* jQuery was created by John Resig, Mozilla, 2006
+* jQueryUI released September 2007
+* Microsoft and Nokia support jQuery, 2008
+* jQuery wins .Net Magazine's Award for Best O/S Application, December 2009
 
 ---
 
@@ -73,10 +72,9 @@ Option #1: Download the library, store it locally...
 
 Option #2: Include via CDN...
 
-  <head>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js">
-    </script>
-  </head>
+    <head>
+      <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    </head>
 
 Note:
 There are two ways to include jQuery in your projects...
@@ -87,7 +85,7 @@ There are two ways to include jQuery in your projects...
 
 ## jQuery Selectors
 
-Remember `document.getElementById()` and `documet.getElementsByTagName()`?
+Remember `document.getElementById()` and `document.getElementsByTagName()`?
 
 jQuery selectors let you get elements by:
 
