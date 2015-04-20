@@ -24,11 +24,29 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ---
 
-## Review
+## Class Overview
+
+* Review / Homework
+* Loops
+* Arrays
+* Objects
+* Document Object Model
+
+---
+
+## Let's Review
 
 * What is a variable?
-* What is a data-type?
-* What is a function?
+* What data-types are available in Javascript?
+* Why would you use a function?
+* What element links a JS file to an HTML file?
+* What's the difference between `=` and `===` ?
+* How do you negate a statement?
+
+Note:
+String, Number, Boolean, Array, Object, undefined and null
+
+You'd use a function to reduce duplication of code. Write it once, call it many times.
 
 ---
 
@@ -49,7 +67,7 @@ You would use a loop to...
 
 You use while loops, if you don't know how many times you'll loop.
 
-    while (expression) {
+    while(condition) {
       // statements to repeat
     }
 
@@ -60,7 +78,7 @@ You use while loops, if you don't know how many times you'll loop.
 An example...
 
     var x = 0;
-    while (x < 5) {
+    while(x < 5) {
       console.log(x);
       x++;
     }
@@ -76,16 +94,16 @@ What happens if we forget x++;? The loop will never end!
 
 Use a <code>for</code> loop, if you know how many times you need to loop.
 
-    for (initialize; condition; update) {
+    for(initialize; condition; update) {
       // statements to repeat
     }
 
 Note:
 3 statements are passed to the for loop... initialize, condition and update.
 
-* Initialize and declare a number.
-* Check if that number has reached 
-* Update will increment 
+* Initialize and declare a number
+* Check if that number has reached the limit
+* Update will increment
 
 
 ---
@@ -94,7 +112,7 @@ Note:
 
 An example...
 
-    for (var i = 0; i < 5; i++) {
+    for(var i = 0; i < 5; i++) {
       console.log(i);
     }
 
@@ -111,7 +129,7 @@ _An array is a data-type that holds a list of values._
 
 An example...
 
-    var arrayName = [element0, element1, ...];
+    var array_name = [element0, element1, ...];
 
 ---
 
@@ -158,9 +176,41 @@ Or to add to an array:
 
     animals[3] = 'Corgis';
 
-You can also use the push method:
+---
 
-    animals.push('Ocelots');
+## Array Methods
+
+Add one or more items onto an array...
+
+    arr.push(element1, ..., elementN)
+
+Removes and return the last item in an array...
+
+    arr.pop()
+
+---
+
+## Array Methods
+
+Remove and return the first item in an array...
+
+    arr.shift()
+
+Add one or more items to the beginning of an array...
+
+    arr.unshift(element1, ..., elementN)
+
+---
+
+## Array Methods
+
+Reverse the order of elements in an array...
+
+    arr.reverse()
+
+Join all elements of an array into a string...
+
+    arr.join(delimiter)
 
 ---
 
@@ -309,13 +359,21 @@ You can pass an object into a function as an argument...
 ## Let's Develop It
 
 __Step #1:__
-<br>Add a function called `my_friends()` which...
+<br>Create a function called `my_friends()` which...
 
 1. Creates an array of friend objects, which defines name and hair color for each of your friends.
 1. Loop through the array and describe each friend in the console.
 
 __Step #2:__
 <br>Make a separate `describe_friend()` function and update `my_friends()` to use that.
+
+---
+
+## Document Object
+
+* Every web-page loaded in a browser has its own `document` object.
+* Contains information about the page.
+* You can inspect URL, doctype, images, links, etc.
 
 ---
 
@@ -332,16 +390,14 @@ Hover, Right Click -> Inspect Element
 
 ## DOM Interaction
 
-On every webpage, the document object gives us ways of accessing and changing the DOM.
-
 Every DOM "node" has properties. They are connected like a family tree.
 
 Parent (`parentNode`), children (`childNodes, firstChild`), siblings (`prevSibling, nextSibling`)
 
-    var bodyNode = document.body; // <body>
-    var htmlNode = document.body.parentNode; // <html>
+    var body_node = document.body; // <body>
+    var html_node = document.body.parentNode; // <html>
     for (var i = 0; i < document.body.childNodes.length; i++) {
-      var childNode = document.body.childNodes[i];
+      var child_node = document.body.childNodes[i];
       //could be <p>, <h1>, etc.
       //any html element
     }
@@ -354,7 +410,7 @@ Finding every element on the page by siblings and children is time consuming!
 
 The document object also provides methods for finding DOM nodes without going one by one
 
-Find element by id
+Find element by id...
 
     <img id="mainpicture" src="some-image.png">
 
@@ -389,21 +445,23 @@ Previously seen example:
 
 ---
 
-## DOM Nodes: Attributes
+## DOM: Attributes
 
 We can use node methods to set and retrieve attributes...
 
     var img = document.getElementById('mainpicture');
-    img.getAttribute('src');
-    img.setAttribute('src', 'http://girldevelopit.com/assets/pink-logo.png');
+        img.getAttribute('src');
+        img.setAttribute('src', 'http://girldevelopit.com/assets/pink-logo.png');
+
+Another example...
 
     var img = document.getElementById('mainpicture');
-    img.getAttribute('class');
-    img.setAttribute('class', 'picture-class');
+        img.getAttribute('class');
+        img.setAttribute('class', 'picture-class');
 
 ---
 
-## DOM Nodes: innerHTML
+## DOM: innerHTML
 
 Each DOM node has an innerHTML property:
 
@@ -419,26 +477,23 @@ You can also just add to the innerHTML instead of replace everything:
 
 ---
 
-## DOM Modifying
+## Modify the DOM
 
 The document object can create new nodes...
 
-    document.createElement(tagName);
+    document.createElement(tag_name);
     document.createTextNode(text);
-
-You can append to the document object too...
-
-    document.appendChild();
+    document.createComment(text);
 
 ---
 
-## DOM Modifying
+## Modify the DOM
 
 Some examples...
 
     var el = document.createElement('img');
-        el.src = 'http://girldevelopit.com/assets/pink-logo.png';
-    document.body.appendChild(newImg);
+        el.src = 'http://gdi.tcmacdonald.com/images/ample-logo.png';
+    document.body.appendChild(el);
 
 &nbsp;
 

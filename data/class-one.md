@@ -496,18 +496,14 @@ Ever wondered how much a lifetime supply of your favorite snack or drink is?
 
 ## Lifetime supply calculator
 
-
 __Step #1:__
-<br>Download  the [Starter Kit](https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip)
-
-__Step #2:__
 <br>Create and initialize the following variables...
 
 1. Your Age
 1. Your Expected Max Age
 1. Estimated Amount Per Day
 
-__Step #3:__
+__Step #2:__
 <br>Calculate how many you'd eat/drink in a lifetime.
 <br>Log _"I'd eat X in my lifetime."_ to the console.
 
