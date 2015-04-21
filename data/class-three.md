@@ -24,6 +24,15 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ---
 
+## Class Overview
+
+* Review / Homework
+* Intro to jQuery
+* jQuery Methods
+* Event Handlers
+
+---
+
 ## What is a library?
 
 * Software libraries hold functions
@@ -64,55 +73,50 @@ jQuery is a library of JavaScript functions.
 
 ## Get jQuery
 
-Option #1: Download the library, store it locally...
+There are two ways to include jQuery...
 
-    <head>
-      <script type="text/javascript" src="jquery.js"></script>
-    </head>
-
-Option #2: Include via CDN...
-
-    <head>
-      <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    </head>
-
-Note:
-There are two ways to include jQuery in your projects...
-
-"Live code can change! It's always best to download"... Not sure I agree with this.
+* Download the library and store it locally.<br>http://jquery.com/download/
+* Include via CDN.<br>http://code.jquery.com/jquery-1.11.2.min.js
 
 ---
 
 ## jQuery Selectors
 
 Remember `document.getElementById()` and `document.getElementsByTagName()`?
+<br>
+<br>
 
-jQuery selectors let you get elements by:
+jQuery selectors let you "select" HTML elements using CSS style syntax.
 
-Element name (div, p)
+For example...
 
-    var divs = $("div"); // All divs on page
+    $(selector); // returns elements matching 'selector'
 
 ---
 
 ## jQuery Selectors
 
-ID name (#mainpicture, #results)
+Select elements by name...
 
-    var img = $("#mainpicture"); //img with id mainpicture
+    var divs = $("div");
 
-Class name (.result, .picture)
+By ID...
 
-    var images = $(".picture"); //All images with class picture 
+    var img = $("#mainpicture");
+
+By class...
+
+    var images = $(".picture");
 
 ---
 
 ## jQuery Actions
 
-jQuery has hundreds of actions that can be performed on any element
+jQuery has hundreds of actions that can be performed on any element.
 
 * All the actions are methods.
-* As methods they are called with dot notation, like so...
+* As methods they are called with dot notation.
+
 
     $(selector).action();
 
@@ -127,8 +131,8 @@ Imagine the following HTML element:
 Get and set attributes...
 
     var img = $('#mainpicture');
-        img.attr('src');
-        img.attr('src', 'http://girldevelopit.com/assets/pink-logo.png');
+        img.attr('src'); // returns logo.png
+        img.attr('src', 'some-new-image.gif');
 
 ---
 
@@ -136,9 +140,12 @@ Get and set attributes...
 
 Get and set CSS properties.
 
-    var img = $('#mainpicture');
-        img.css('width');
-        img.css('width', '200px');
+    var el = $('body');
+        el.css('background', '#000');
+
+Set multiple properties at once...
+
+    el.css({ background: 'red', color: 'white' });
 
 ---
 
@@ -146,21 +153,17 @@ Get and set CSS properties.
 
 Imagine the following HTML...
 
-    <div id = "results">Boo!</div>
+    <div id="results">Boo!</div>
 
 Get and set an element's contents...
 
     var div = $('#results');
-        div.html();
+        div.html(); // returns 'Boo!'
         div.html('New html!');
 
 ---
 
 ## jQuery: Append HTML
-
-Imagine the following HTML...
-
-    <div id="results">Boo!</div>
 
 Append HTML content...
 
@@ -182,7 +185,7 @@ Prepend HTML content...
 
 Creating new element...
 
-    var newDiv = $('<div></div>');
+    var el = $('<div></div>');
 
 ---
 
@@ -257,7 +260,7 @@ Some common events:
 
 ## Combining Events
 
-If you want multiple events to happen on the same element, you should use the bind method...
+If you want multiple events to happen on the same element, you should use the `bind` method...
 
     $('.box').bind({
       click: function() {
@@ -278,8 +281,7 @@ If you want multiple events to happen on the same element, you should use the bi
 * Add a div to your html that is 100px by 200px
 * Bind events to the div in your javascript file
 * Don't forget to surround your events with document ready
-* Try to change size, color, or event the html inside the div
-* *Bonus:* change all the onclick events to jQuery click events
+* Try to change size, color, or the html inside the div
 
 ---
 
