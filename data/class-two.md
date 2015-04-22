@@ -246,9 +246,9 @@ __Step #2:__
 
 Objects are a data type that let us store a collection of properties and methods.
 
-    var objectName = {
-      propertyName: propertyValue,
-      propertyName: propertyValue,
+    var object_name = {
+      property: value,
+      property: value,
       ...
     };
 
