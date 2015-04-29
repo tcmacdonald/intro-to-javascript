@@ -256,6 +256,8 @@ Objects are a data type that let us store a collection of properties and methods
 
 ## Objects
 
+For example...
+
     var charlie = {
       age: 8,
       name: "Charlie Brown",
@@ -267,7 +269,7 @@ Objects are a data type that let us store a collection of properties and methods
 
 ## Accessing Objects
 
-Access values of "properties" using "dot notation":
+Access values of properties using "dot notation".
 
 
     var charlie = {
@@ -283,13 +285,14 @@ Access values of "properties" using "dot notation":
 
 ## Accessing Objects
 
-Or using "bracket notation" (like arrays):
+You can also use "bracket notation" (like arrays):
 
     var name = charlie['name'];
 
 Non-existent properties will return undefined:
 
-    var gender = charlie.gender
+    var gender = charlie.gender;
+    console.log(gender); // undefined
 
 ---
 
@@ -343,14 +346,14 @@ That means we can use a for loop!
 
 You can pass an object into a function as an argument...
 
+    function describe(character) {
+      console.log(character.name + ' has a pet named ' + character.pet + '.');
+    }
+
     var peanut = {
       name: "Charlie Brown",
       pet: "Snoopy"
     };
-
-    function describe(character) {
-      console.log(character.name + ' has a pet named ' + character.pet + '.');
-    }
 
     describe(peanut);
 
@@ -408,7 +411,7 @@ Parent (`parentNode`), children (`childNodes, firstChild`), siblings (`prevSibli
 
 Finding every element on the page by siblings and children is time consuming!
 
-The document object also provides methods for finding DOM nodes without going one by one
+The document object also provides methods for finding DOM nodes without going one by one.
 
 Find element by id...
 
@@ -431,12 +434,15 @@ Find element by tag name (`p`, `li`, `div`, etc.)
       var item = items[i];
     }
 
+Or by class name...
+
+    document.getElementsByClassName('peanut');
+
 ---
 
 ## Methods
 
-* Methods are functions that are associated with an object
-* They affect or return a value for a specific object
+* Methods are functions associated with an object
 * Used with dot notation
 
 Previously seen example:
@@ -447,11 +453,11 @@ Previously seen example:
 
 ## DOM: Attributes
 
-We can use node methods to set and retrieve attributes...
+We can use methods on DOM nodes to set and retrieve attributes...
 
     var img = document.getElementById('mainpicture');
         img.getAttribute('src');
-        img.setAttribute('src', 'http://girldevelopit.com/assets/pink-logo.png');
+        img.setAttribute('src', 'http://gdi.tcmacdonald.com/images/ample-logo.png');
 
 Another example...
 

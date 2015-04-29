@@ -1,0 +1,47 @@
+extends ../layouts/application.jade
+
+block content
+
+  h1(class='text-center')!= title
+  h2(class='text-center subtitle')!= subtitle
+
+  .row
+    div(class='col-md-10 col-md-offset-1')
+      hr
+      h3 Task #1: Logo Hijack
+      ul
+        li Open up <a href="http://google.com">google.com</a> in Chrome and open up the console.
+        li Find the Google logo and store it in a variable.
+        li Modify the source of the logo IMG so that it's a Yahoo logo instead. (<a href="http://www.logostage.com/logos/yahoo.GIF">http://www.logostage.com/logos/yahoo.GIF</a>)
+        li Find the Google search button and store it in a variable.
+        li Modify the text of the button so that it says "Yahooo!" instead.
+        li Take a screenshot for posterity!
+        li <i>Hint: jQuery isn't available so you'll have to get creative to target these elements.</i>
+      br
+
+      hr
+      h3 Task #2: The Reading List, Part 2
+      ul
+        li Create a webpage with an <code>h1</code> of "My Book List".
+        li Add a <code>script</code> tag to the page, where all your JS will go.
+        li Copy the array of books from the previous exercise.
+        li Iterate through the array of books. For each book, create a <code>p</code> element with the book title and author and append it to the page.
+        li <i>Bonus: Use a <code>ul</code> and <code>li</code> to display the books.</i>
+        li <i>Bonus: Add a property to each book with the URL of the book cover, and add an <code>img</code> element for each book on the page.</i>
+        li <i>Bonus: Change the style of the book depending on whether you have read it or not.</i>
+      br
+
+      hr
+      h3 Task #3: Color Switcher
+      ul
+        li Create a new webpage with an <code>h1</code> of "Color Switcher".
+        li Add jQuery to the page (via the <a href="https://code.jquery.com/jquery-2.1.4.min.js">CDN</a>)
+        li Add a <code>ul</code> element with 5-10 <code>li</code> children, each including random strings and random classes.
+        li Add a <code>form</code> element with two <code>input</code> fields (class_name, background_color) and a submit button.
+        li Add some Javascript so that when the form is submitted, the value supplied for background_color is applied to all <code>li</code> elements that have the specified class name.
+
+      br
+
+      hr
+      br
+      br

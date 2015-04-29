@@ -56,9 +56,10 @@ jQuery is a library of JavaScript functions.
 ## Why use jQuery?
 
 * The most popular JavaScript library
-* jQuery empowers you to "write less, do more."
-* Great documentation and tutorials
 * Used by nearly 20 million websites
+* jQuery lets you "write less, do more."
+* Great documentation and tutorials
+* Lots of Plugins
 
 ---
 
@@ -76,7 +77,7 @@ jQuery is a library of JavaScript functions.
 There are two ways to include jQuery...
 
 * Download the library and store it locally.<br>http://jquery.com/download/
-* Include via CDN.<br>http://code.jquery.com/jquery-1.11.2.min.js
+* Include via CDN.<br>http://code.jquery.com/jquery-1.11.2.min.js<br>or http://code.jquery.com/jquery-2.1.1.min.js
 
 ---
 
@@ -87,10 +88,6 @@ Remember `document.getElementById()` and `document.getElementsByTagName()`?
 <br>
 
 jQuery selectors let you "select" HTML elements using CSS style syntax.
-
-For example...
-
-    $(selector); // returns elements matching 'selector'
 
 ---
 
@@ -203,7 +200,7 @@ __Webpages take time to load.__
 
 You almost never want Javascript to be called until the page has loaded.
 
-Document ready is a method called when the page is loaded
+<code>$(document).ready</code> is a method called when the page is loaded.
 
     $(document).ready(function(){
       // code goes here...
@@ -229,16 +226,23 @@ Some common events:
 
 ## Handling Events
 
+jQuery to the rescue...
+
     $(selector).mouseenter(function(){
       // code to execute when the mouse enters...
     });
+
+---
+
+## Handling Events
+
+For example...
 
     $('.box').mouseenter(function(){
       $(this).css('background-color', 'purple')
     });
 
-* The $(this) selector in jQuery refers to the element on whom the action was called.
-* Here $(this) is the $('.box') that the mouse entered.
+The <code>$(this)</code> selector in jQuery refers to the element on whom the action was called.
 
 ---
 
@@ -246,15 +250,15 @@ Some common events:
 
     $('.box').mouseenter(function(){
       $(this).css('background-color', 'purple')
-    })
+    });
 
     $('.box').mouseleave(function(){
       $(this).css('background-color', 'orange')
-    })
+    });
 
     $('.box').click(function(){
       $(this).css('background-color', 'green')
-    })
+    });
 
 ---
 
@@ -312,7 +316,7 @@ HTML Forms allow users to enter information
 
 ## HTML Forms
 
-You can use JavaScript to get values from a form...
+You can use jQuery to get values from a form...
 
     $('#name').val();
     $('select#dinosaur').val();
@@ -344,7 +348,6 @@ jQuery has an event for form submission
 
 * Choose one (or all!) of your functions made so far (lifetime supply, favorite things, or my friends)
 * Create a form to send dynamic data to the function when you click the button
-* Don't forget to add parameters to your existing functions!
 
 Note:
 This is a little harder than all the other exercises. Be creative!
