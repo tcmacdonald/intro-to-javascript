@@ -428,11 +428,7 @@ Find element by tag name (`p`, `li`, `div`, etc.)
     <li class="peanut">Charlie Brown</li>
     <li class="peanut">Linus van Pelt</li>
 
-
     var items = document.getElementsByTagName('li');
-    for (var i =0; i < items.length; i++) {
-      var item = items[i];
-    }
 
 Or by class name...
 
