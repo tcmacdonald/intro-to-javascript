@@ -264,6 +264,16 @@ You can also get the value of an input field, like so.
 
 ---
 
+## Let's Develop It
+
+Using the Bootstrap example, open the console and do the following questions...
+
+1. Under "Badges", update the numbers for each `span.badge` element to 10000.
+1. Under "Progress Bar", find out what percentage has been applied to the 5th progress bar.
+1. Under "List Groups", change the text in the 3rd element of the 2nd group.
+
+---
+
 ## CSS
 
 You can get and set CSS properties too.
@@ -423,10 +433,15 @@ You could do something when the form is submitted.
 
 ---
 
-## Let's Develop It
+## Let's Develop It Together
 
-Using the Bootstrap example, open the console and answer the following questions...
+For your final in-class exercise, let's build a simple tabbed interface using jQuery.
 
-1. Under the 'Buttons' heading, many button elements are there?
-1. ...
+1. Should consist of three links and three corresponding pieces of content.
+1. When clicking a link, it should show the relevant content.
+1. Time permitting, add some styles to make it look real nice.
+
+---
+
+## Questions?
 
