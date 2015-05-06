@@ -157,6 +157,38 @@ You can select elements who's attributes end with a specific value.
 
 ---
 
+## Selectors
+
+jQuery also supports psuedo selectors.
+
+![Jquery Selectors](/images/jquery-select-psuedo.png) <!-- .element: class="no-border" -->
+
+---
+
+## Selectors
+
+You can select an element if it contains a certain value.
+
+![Jquery Selectors](/images/jquery-select-contains.png) <!-- .element: class="no-border" -->
+
+---
+
+## Selectors
+
+You can select only even elements (or only odd).
+
+![Jquery Selectors](/images/jquery-select-even-odd.png) <!-- .element: class="no-border" -->
+
+---
+
+## Selectors
+
+You can also define elements you don't want to select.
+
+![Jquery Selectors](/images/jquery-select-not.png) <!-- .element: class="no-border" -->
+
+---
+
 ## Let's Develop It
 
 Using the Bootstrap example, open the console and answer the following questions...
@@ -202,7 +234,7 @@ You can grab the `.first()` or `.last()` element in a collection returned by jQu
 
 ## Traversing the DOM
 
-You can target individual items in an array with the `eq()` method.
+You can target individual items in an array with the `.eq()` method.
 
 ![Traversing the DOM](/images/jquery-traverse-eq.png) <!-- .element: class="no-border" -->
 
@@ -218,9 +250,17 @@ You can use `.next()` to get the next, immediate sibling of an element.
 
 ## Traversing the DOM
 
-You can use `.prev()` to get the previous, immediate sibling of an element.,
+You can use `.prev()` to get the previous, immediate sibling of an element.
 
 ![Traversing the DOM](/images/jquery-traverse-prev.png) <!-- .element: class="no-border" -->
+
+---
+
+## Traversing the DOM
+
+You can use `.filter()` to reduce an array by a specific selector.
+
+![Traversing the DOM](/images/jquery-traverse-filter.png) <!-- .element: class="no-border" -->
 
 ---
 
