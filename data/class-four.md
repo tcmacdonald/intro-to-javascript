@@ -2,7 +2,7 @@
 
 ---
 
-# Intro to Javascript <small class="gray">Class #4</small>
+# Intro to Javascript <small class="gray" style="font-size: 50%;">jQuery Insanity:<br>Selector Boogaloo</small>
 
 ### Taylor C. MacDonald  <!-- .element: class="dark" -->
 http://gdi.tcmacdonald.com
@@ -28,10 +28,10 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 * Selectors
 * Traversing the DOM
-* Events
+* Elements
 * CSS
-* Objects
 * Effects
+* Events
 
 ---
 
@@ -202,6 +202,14 @@ You can grab the `.first()` or `.last()` element in a collection returned by jQu
 
 ## Traversing the DOM
 
+You can target individual items in an array with the `eq()` method.
+
+![Traversing the DOM](/images/jquery-traverse-eq.png) <!-- .element: class="no-border" -->
+
+---
+
+## Traversing the DOM
+
 You can use `.next()` to get the next, immediate sibling of an element.
 
 ![Traversing the DOM](/images/jquery-traverse-next.png) <!-- .element: class="no-border" -->
@@ -229,6 +237,14 @@ jQuery also provides a method for looping through elements it returns.
 You can use jQuery to get and set information on an element.
 
 ![Elements](/images/jquery-objects-width.png) <!-- .element: class="no-border" -->
+
+---
+
+## Elements
+
+You can get or set an element's text...
+
+![Elements](/images/jquery-objects-text.png) <!-- .element: class="no-border" -->
 
 ---
 
