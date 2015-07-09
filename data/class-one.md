@@ -39,16 +39,102 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 * Who are you?
 * What do you hope to get out of the class?
-* If you could have lunch with anybody (dead or alive) who would it be?
+* What's your favorite Pixar movie?
 
 ---
 
 ## Tools
 
-* __Browser:__ Chrome, [http://google.com/chrome](http://www.google.com/chrome/)
-* __Text Editor:__ Sublime Text 3, [http://sublimetext.com/3](http://www.sublimetext.com/3)
-* __Console:__ JSBin, [http://jsbin.com/](http://jsbin.com/)
-* __Need Help?__: Google (StackOverflow, MDN)
+* __Browser:__ [google.com/chrome](http://www.google.com/chrome/)
+* __Interactive Console:__ [jsbin.com](http://jsbin.com/)
+* __Editor:__ [sublimetext.com/3](http://www.sublimetext.com/3)
+
+<br>
+
+## __Need Help?__
+
+Google is the greatest resource<br>in the history of mankind. _Google it._
+
+* [stackoverflow.com](http://stackoverflow.com/questions/tagged/javascript)
+* [mdn.io](http://mdn.io)
+
+---
+
+## Books
+
+__JavaScript: The Definitive Guide__ – David Flanagan
+
+__JavaScript: The Good Parts__ - Douglas Crockford
+
+__JavaScript and JQuery__ - Jon Duckett
+
+
+![Girl Develop It](/images/books.png) <!-- .element: class="no-border" -->
+
+---
+
+## what is javascript?
+
+The most popular language on Github.
+![Girl Develop It](/images/popularity-on-github.png) <!-- .element: class="no-border" -->
+
+Note:
+Javascript is everywhere.
+
+---
+
+## what is javascript?
+
+* The most widely deployed language in history.
+* Quirky and misunderstood.
+* ...evolving fast!
+
+<figcaption>Source: http://toptal.io</figcaption>
+![JS Technologies](/images/toptal-js-technologies.png)
+
+Note:
+If you have a smartphone or computer, you can run Javascript.
+
+Javascript syntax is similar to that of C &amp; shares similarities to other languages but has some quirks too...
+
+<ul>
+  <li>Object Oriented, but based on a prototypal object system, instead of a class system.</li>
+  <li>Poorly documented.</li>
+  <li>No good implementations until Google's V8.</li>
+</ul>
+
+---
+
+## what is javascript?
+
+_Making web pages more interactive, since 1995._<br><br>
+
+__Javascript allows us to...__
+
+* Access content or elements
+* Modify content or elements
+* React to events
+* Program rules to be executed (e.g. scripts)
+
+---
+
+## what javascript<br>is not...
+
+_Javascript is not Java._
+
+![](/images/java-vs-javascript.jpg)
+
+Note:
+Java is to Javascript as Ham is to Hamster.
+<dl>
+  <dt>Javascript</dt>
+  <dd>Client &amp; server-side scripting language</dd>
+  <dt>Java</dt>
+  <dd>Development platform designed by Sun Microsystems</dd>
+</dl>
+
+
+Don't confuse the two.
 
 ---
 
@@ -86,13 +172,14 @@ Traditionally, Javascript has always been associated with the client side.
 
 ## More Vocabulary
 
-<dl>
-  <dt>Front-End</dt>
-  <dd>The outwardly visible elements of a website or application. (Client Side)</dd>
+<p><strong>Front-End:</strong> HTML, CSS, Javascript</p>
 
-  <dt>Back-End</dt>
-  <dd>The inner workings and functionality of a website or application. (Server Side)</dd>
-</dl>
+<figure>
+  ![](/images/frontend-v-backend.jpg)
+  <figcaption>Source: <a href="http://skillcrush.com/2012/08/13/frontend-vs-backend-2/">skillcrush.com</a></figcaption>
+</figure>
+
+<p><strong>Back-End:</strong> Databases, Webservers, etc.</p>
 
 Note:
 When you 'view source', what you're seeing is the front-end code. HTML, CSS & Javascript.
@@ -101,57 +188,14 @@ Any questions?
 
 ---
 
-## what is javascript?
-
-The most popular language on Github.
-![Girl Develop It](/images/popularity-on-github.png) <!-- .element: class="no-border" -->
-
-Note:
-Javascript is everywhere.
-
----
-
-## what is javascript?
-
-* The most widely deployed language in history.
-* Quirky and misunderstood.
-* Small but super fast.
-
-Note:
-If you have a smartphone or computer, you can run Javascript.
-
-Javascript syntax is similar to that of C &amp; shares similarities to other languages but has some quirks too...
-
-<ul>
-  <li>Object Oriented, but based on a prototypal object system, instead of a class system.</li>
-  <li>Poorly documented.</li>
-  <li>No good implementations until Google's V8.</li>
-</ul>
-
----
-
-## javascript is not java
-
-<dl>
-  <dt>Javascript</dt>
-  <dd>Client &amp; server-side scripting language</dd>
-  <dt>Java</dt>
-  <dd>Development platform designed by Sun Microsystems</dd>
-</dl>
-
-Note:
-Java is to Javascript as Ham is to Hamster.
-
-Don't confuse the two.
-
----
-
 ## History of JavaScript
 
-* Developed by Brendan Eich at Netscape, 1995
-* Originally called Livescript
-* Sun develops competing technology... HotJava
-* Livescript is renamed Javascript by Marc Andreesen
+* _1995_ - __Brendan Eich__ at Netscape creates __Livescript__
+* _1995_ - __Sun__ begins work on __HotJava__
+* _1996_ - __Livescript__ renamed to __Javascript__
+
+<figcaption>Source: <a href="http://www.evolutionoftheweb.com/">evolutionoftheweb.com</a></figcaption>
+![](/images/evolution.png)
 
 Note:
 Marc Andreesen of Andreeson Horowitz a $4 Billion venture capital firm.
@@ -162,9 +206,12 @@ Andreesen Horowitz has invested in companies like Facebook, Twitter, Airbnb, Git
 
 ## History of JavaScript
 
-* Microsoft releases JScript, 1996
-* Sun and Netscape join forces
-* Standardized by ECMA, 1998
+* _1996_ - __Microsoft__ releases JScript
+* _1996ish_ - __Sun__ and __Netscape__ join forces
+* _1998_ - Standardized by __ECMA__
+
+<figcaption>Source: <a href="http://www.evolutionoftheweb.com/">evolutionoftheweb.com</a></figcaption>
+![](/images/evolution2.png)
 
 Note:
 Technically, Javascript is a subset of ECMAScript.
@@ -175,11 +222,14 @@ Things were pretty quiet after 1998 until...
 
 ## History of JavaScript
 
-* AJAX (asynchronous requests), 2005
-* jQuery (utility library), 2006
-* Google V8 (javascript implementation), 2008
-* Node (web server), 2010
-* ES6 (next incarnation), 2015
+* _2005_ - __AJAX__ (asynchronous requests)
+* _2006_ - __jQuery__ (utility library)
+* _2008_ - __Google V8__ (javascript implementation)
+* _2010_ - __Node__ (web server)
+* _2015_ - __ES6__ (next incarnation)
+
+<figcaption>Source: <a href="http://fbcovergen.com">fbcovergen.com</a></figcaption>
+![](/images/evolution3.png) <!-- .element: class="no-border" -->
 
 Note:
 <b>AJAX</b>  
@@ -242,31 +292,72 @@ Who can tell me what the ES in ES6 stands for?
 
 ---
 
-## The Most Important<br>Slide of the Day
+## Front-End Stack
 
-<br>
-What do you need to be successful in this class?
+__HTML__: Content Layer  
+<small>_This layer defines the content and structure of the page._</small>
 
-1. Attention to detail.
-1. Attention to detail.
-1. Attention to detail.
+__CSS__: Presentation Layer
+<small>_This layer uses style rules to change the appearance of elements on the page._</small>
 
-Note:
-Javascript is not forgiving. You will encounter problems if you don't pay attention to all the details.
+__Javascript__: Behavior Layer
+<small>_This layer defines the behavior of most of the interactive components on the page._</small>
+
+---
+
+## Javascript Files
+
+* Simple text files, like HTML or CSS
+* Contain a series of JS statements
+* Have a `.js` file extension
+
+![](/images/js-file.png) <!-- .element: class="no-border" -->
+
+---
+
+## Including Scripts
+
+* Use the `<script>` tag to include JS files in a page
+* Browser executes the code when the page loads
+  
+  
+
+![](/images/source-code.png) <!-- .element: class="no-border" -->
+
+---
+
+## Let's Develop It
+
+1. Create a folder named __gdi__
+1. In that folder, add a new file named __application.js__ with the following contents...
+
+        document.write('Hello world!');
+<!-- .element: style="margin-left: 0;" -->
+
+1. Add an __index.html__ file and between the __&lt;body>__ tags, add a __&lt;script>__ tag referencing the file you created in the last step
+1. Open __index.html__ in a browser
+
+
+
+---
+
+## What is JSBin?
+
+* Playground for front-end code
+* Experiment with HTML, CSS & JS
+* Save and share your scripts
+
+![jsbin.com](/images/jsbin-start.png) <!-- .element: class="no-border" -->
 
 ---
 
 ## Syntax
 
-* Each line in JavaScript is an instruction. 
-* Every instruction ends with a semicolon. 
-* When the browser reads it, it "executes the script". 
+* Each line in JavaScript is an instruction
+* Every instruction ends with a semicolon
+* Try executing the following on [jsbin.com](http://jsbin.com)
 
-<br>
-
-    console.log('Hello');
-
-<p>Try it out on [jsbin.com](http://jsbin.com)</p> 
+![jsbin.com](/images/hello-world.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -277,12 +368,12 @@ Javascript is not forgiving. You will encounter problems if you don't pay attent
 
 Declare a variable (Give it a name) 
 
-    var bananas;
+    var apples;
 
 
 Initialize variable (Give it a value) 
 
-    bananas = 5;
+    apples = 5;
 
 
 Note:
@@ -296,43 +387,26 @@ Variables are containers for values.
 
 Declare and initialize at the same time! 
 
-    var bananas = 5;
+    var apples = 5;
 
 
 Change value of variable. 
 
-    bananas = 4; 
+    apples = 4; 
 
 ---
 
-## Data types
+## Data types*
 
-* String
 * Number
+* String
 * Boolean
-* Array
-* Object
-* undefined
-* null
+
+<br>
+<small>_* Not including four other data types that will be explained later.<br>(Array, Object, undefined and null)_</small>
 
 Note:
 A data-type describes what kinds of values can be stored in a variable.
-
----
-
-## Data types
-
-### String <!-- .element: class="dark" -->
-
-http://mdn.io/string 
-
-A group of characters in quotes.
-
-    var fruit = "banana";
-
-
-Note:
-You can use single quotes or double quotes.
 
 ---
 
@@ -344,15 +418,29 @@ http://mdn.io/number
 
 Integers or decimals, without quotes.
 
+    var total_apples = 200;
     var pi = 3.14;
-    var year = 2013;
-    var total_bananas = 200;
-
 
 Note:
 Javascript only has the one Number type.
 
 It's common in other languages to have Integer and Floating Point (decimals) but in JS everything is just a Number.
+
+---
+
+## Data types
+
+### String <!-- .element: class="dark" -->
+
+http://mdn.io/string 
+
+A group of characters in quotes.
+
+    var class_name = 'Intro to Javascript and jQuery';
+    var fruit = "apple";
+
+Note:
+You can use single quotes or double quotes.
 
 ---
 
@@ -370,59 +458,9 @@ True or False
 
 ---
 
-## Data types
-
-### Array <!-- .element: class="dark" -->
-
-http://mdn.io/array 
-
-Collections of values. 
-
-    var numbers = [1,2,3,4,5];
-    var socks = new Array('pink', 'striped', 'argyle');
-
----
-
-## Data types
-
-### Object <!-- .element: class="dark" -->
-
-http://mdn.io/object 
-
-Container for key/value pairs. 
-
-    var animals = { cat: 'Fluffy', dog: 'Fido' };
-
----
-
-## Data types
-
-### undefined <!-- .element: class="dark" -->
-
-http://mdn.io/undefined 
-
-Has not been assigned a value. 
-
-    var favorite_cookie;
-
-
----
-
-## Data types
-
-### null <!-- .element: class="dark" -->
-
-http://mdn.io/null 
-
-A purposely empty value (not the same as 0) 
-
-    var favorite_cookie = null;
-
----
-
 ## Naming rules
 
-* Functions and variables can start with a letter, _, or $ 
+* Functions and variables start with a letter, _, or $ 
 * Can contain letters, numbers, _ 
 
 
@@ -512,7 +550,7 @@ __Step #2:__
 
 Javascript can execute under certain conditions 
 
-    if (condition here){
+    if (condition here) {
       // statement to execute
     }
 
@@ -521,8 +559,8 @@ An example...
 
 
     var bananas = 1;
-    if (bananas < 2){
-      console.log("Buy more bananas!")
+    if (bananas < 2) {
+      console.log("Buy more bananas!");
     }
 
 
@@ -584,6 +622,7 @@ Evaluate two conditions at once with two ampersands (`&&`)
 Use `else` to perform an alternative action&hellip;
 
     var bananas = 5;
+    
     if (bananas > 3){
       console.log('Eat a banana!');
     } else {
@@ -597,6 +636,7 @@ Use `else` to perform an alternative action&hellip;
 You can use `else if` to have multiple choices
 
     var age = 20;
+    
     if (age >= 35) {
       console.log('You can vote AND hold any place in government!');
     } else if (age >= 25) {
@@ -688,7 +728,7 @@ For example&hellip;
 
 ## Variable Scope
 
-JavaScript variables have two scopes: local and global.
+JavaScript variables have two scopes...
 
 <dl>
   <dt>Local Scope</dt>

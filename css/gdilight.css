@@ -35,6 +35,16 @@ body {
   background: radial-gradient(center, circle cover, #f7fbfc 0%, #fcf3e0 100%);
   background-color: #f7fbfc; }
 
+.reveal figure {
+  margin-top: 20px;
+}
+
+.reveal figcaption {
+  margin-top: 0;
+  font-size: 11px;
+  color: #BBB;
+}
+
 .reveal {
   font-family: 'Gotham-Book', 'Helvetica', Arial, sans-serif;
   font-size: 36px;
@@ -225,6 +235,10 @@ body {
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.reveal section figure img {
+  margin-bottom: 0;
+}
 
 .reveal a img {
   -webkit-transition: all 0.15s linear;

@@ -14,77 +14,95 @@ block content
           li(class='list-group-item')
             a(href='/classes/one') Slides
           li(class='list-group-item')
-            a(href='http://jsbin.com/bugimu/1/edit?js,console') In-Class Exercises
-            |  (jsbin.com)
-          li(class='list-group-item')
             a(href='/homework/one') Homework
-          li(class='list-group-item')
-            a(href='https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip') Starter Kit
-            |  (.zip)
+          li(class='list-group-item') &nbsp;
+          li(class='list-group-item') &nbsp;
 
-    // Class #2
-    div(class='col-md-3 col-sm-6')
-      div(class='panel panel-default')
-        div(class='panel-heading')
-          strong Class #2
-        ul(class='list-group')
-          li(class='list-group-item')
-            a(href='/classes/two') Slides
-          li(class='list-group-item')
-            a(href='http://jsbin.com/bixeve/1/edit?js,output') In-Class Exercises
-            |  (jsbin.com)
-          li(class='list-group-item')
-            a(href='/homework/two') Homework
-          li(class='list-group-item')
-            | &nbsp;
+          //-
+            li(class='list-group-item')
+              a(href='http://jsbin.com/bugimu/1/edit?js,console') In-Class Exercises
+              |  (jsbin.com)
+            li(class='list-group-item')
+              a(href='/homework/one') Homework
+            li(class='list-group-item')
+              a(href='https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip') Starter Kit
+              |  (.zip)
 
-    // Class #3
-    div(class='col-md-3 col-sm-6')
-      div(class='panel panel-default')
-        div(class='panel-heading')
-          strong Class #3
-        ul(class='list-group')
-          li(class='list-group-item')
-            a(href='/classes/three') Slides
-          li(class='list-group-item')
-            ul(class='list-unstyled list-inline')
-              li
-                | In-Class Exercises:
-              li
-                a(href='http://jsbin.com/bixeve/4/edit?js,output') Part 1
-                | &nbsp;&middot; 
-                a(href='http://jsbin.com/sezuto/1/edit?html,js,output') 2
-                | &nbsp;&middot; 
-                a(href='http://jsbin.com/dujegu/49/edit?html,js,output') 3
+    each val in [2, 3, 4]
+      div(class='col-md-3 col-sm-6')
+        div(class='panel panel-default')
+          div(class='panel-heading')
+            strong Class ##{val}
+          ul(class='list-group')
+            li(class='list-group-item') Coming soon!
+            li(class='list-group-item') &nbsp;
+            li(class='list-group-item') &nbsp;
+            li(class='list-group-item') &nbsp;
 
-          li(class='list-group-item')
-            a(href='/homework/three') Homework
-          li(class='list-group-item')
-            a(href='http://oscarotero.com/jquery/') jQuery Cheatsheet
+    //-
+      // Class #2
+      div(class='col-md-3 col-sm-6')
+        div(class='panel panel-default')
+          div(class='panel-heading')
+            strong Class #2
+          ul(class='list-group')
+            li(class='list-group-item')
+              a(href='/classes/two') Slides
+            li(class='list-group-item')
+              a(href='http://jsbin.com/bixeve/1/edit?js,output') In-Class Exercises
+              |  (jsbin.com)
+            li(class='list-group-item')
+              a(href='/homework/two') Homework
+            li(class='list-group-item')
+              | &nbsp;
 
-    // Class #2
-    div(class='col-md-3 col-sm-6')
-      div(class='panel panel-default')
-        div(class='panel-heading')
-          strong Class #4
-        ul(class='list-group')
-          li(class='list-group-item')
-            a(href='/classes/four') Slides
-          li(class='list-group-item')
-            ul(class='list-unstyled list-inline')
-              li
-                | In-Class Exercises:
-              li
-                a(href='https://www.dropbox.com/s/go05q8d0com9ujl/Screenshot%202015-05-05%2021.43.18.png?dl=0') Part 1
-                | &nbsp;&middot; 
-                a(href='https://www.dropbox.com/s/go05q8d0com9ujl/Screenshot%202015-05-05%2021.43.18.png?dl=0') 2
-                | &nbsp;&middot; 
-                a(href='http://jsbin.com/yufute/15/edit?html,css,js,output') 3
+      // Class #3
+      div(class='col-md-3 col-sm-6')
+        div(class='panel panel-default')
+          div(class='panel-heading')
+            strong Class #3
+          ul(class='list-group')
+            li(class='list-group-item')
+              a(href='/classes/three') Slides
+            li(class='list-group-item')
+              ul(class='list-unstyled list-inline')
+                li
+                  | In-Class Exercises:
+                li
+                  a(href='http://jsbin.com/bixeve/4/edit?js,output') Part 1
+                  | &nbsp;&middot; 
+                  a(href='http://jsbin.com/sezuto/1/edit?html,js,output') 2
+                  | &nbsp;&middot; 
+                  a(href='http://jsbin.com/dujegu/49/edit?html,js,output') 3
 
-          li(class='list-group-item')
-            a(href='#',class='schools-out') Homework
-          li(class='list-group-item')
-            | &nbsp;
+            li(class='list-group-item')
+              a(href='/homework/three') Homework
+            li(class='list-group-item')
+              a(href='http://oscarotero.com/jquery/') jQuery Cheatsheet
+
+      // Class #2
+      div(class='col-md-3 col-sm-6')
+        div(class='panel panel-default')
+          div(class='panel-heading')
+            strong Class #4
+          ul(class='list-group')
+            li(class='list-group-item')
+              a(href='/classes/four') Slides
+            li(class='list-group-item')
+              ul(class='list-unstyled list-inline')
+                li
+                  | In-Class Exercises:
+                li
+                  a(href='https://www.dropbox.com/s/go05q8d0com9ujl/Screenshot%202015-05-05%2021.43.18.png?dl=0') Part 1
+                  | &nbsp;&middot; 
+                  a(href='https://www.dropbox.com/s/go05q8d0com9ujl/Screenshot%202015-05-05%2021.43.18.png?dl=0') 2
+                  | &nbsp;&middot; 
+                  a(href='http://jsbin.com/yufute/15/edit?html,css,js,output') 3
+
+            li(class='list-group-item')
+              a(href='#',class='schools-out') Homework
+            li(class='list-group-item')
+              | &nbsp;
 
   figure(class='text-center col-md-8 col-md-offset-2')
     hr
