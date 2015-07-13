@@ -41,13 +41,36 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 * What do you hope to get out of the class?
 * What's your favorite Pixar movie?
 
+![Girl Develop It](/images/pixar.png) <!-- .element: class="no-border" -->
+
+---
+
+### Programming Is Hard
+
+_"It's harder than you think. Right now you're probably underestimating the amount of frustration and discomfort you're about to experience..."_
+
+http://writing.bryanwoods4e.com/1-poor-poor-child
+
+![Girl Develop It](/images/programming-is-hard.png) <!-- .element: class="no-border" -->
+
+Note:
+Some highlights include...
+
+1. Programming is not always intuitive, it's inherently complex, and it's challenging.
+
+2. It's ok to suck at math, you won't be using it too much anyway.
+
+3. Programming is the best way to learn programming.
+
+4. Details matter.
+
 ---
 
 ## Tools
 
 * __Browser:__ [google.com/chrome](http://www.google.com/chrome/)
-* __Interactive Console:__ [jsbin.com](http://jsbin.com/)
 * __Editor:__ [sublimetext.com/3](http://www.sublimetext.com/3)
+* __Interactive Console:__ [jsbin.com](http://jsbin.com/)
 
 <br>
 
@@ -116,6 +139,9 @@ __Javascript allows us to...__
 * React to events
 * Program rules to be executed (e.g. scripts)
 
+Note:
+Javascript makes the web more interactive.
+
 ---
 
 ## what javascript<br>is not...
@@ -138,56 +164,6 @@ Don't confuse the two.
 
 ---
 
-## Vocabulary
-
-<dl>
-  <dt>Client</dt>
-  <dd>The computer requesting the web page.</dd>
-
-  <dt>Server</dt>
-  <dd>The computer responding to the request and returning HTML.</dd>
-</dl>
-
-Note:
-When you load a webpage in your browser, you are the client.
-
-The computer that returns HTML is the server.
-
----
-
-## Clients &amp; Servers
-
-![](/images/client-server.png)
-
-JavaScript runs "client side"
-
-JavaScript also runs "server side" (node.js)
-
-Note:
-Here is a picture of this transaction...
-
-Traditionally, Javascript has always been associated with the client side.
-
----
-
-## More Vocabulary
-
-<p><strong>Front-End:</strong> HTML, CSS, Javascript</p>
-
-<figure>
-  ![](/images/frontend-v-backend.jpg)
-  <figcaption>Source: <a href="http://skillcrush.com/2012/08/13/frontend-vs-backend-2/">skillcrush.com</a></figcaption>
-</figure>
-
-<p><strong>Back-End:</strong> Databases, Webservers, etc.</p>
-
-Note:
-When you 'view source', what you're seeing is the front-end code. HTML, CSS & Javascript.
-
-Any questions?
-
----
-
 ## History of JavaScript
 
 * _1995_ - __Brendan Eich__ at Netscape creates __Livescript__
@@ -198,7 +174,7 @@ Any questions?
 ![](/images/evolution.png)
 
 Note:
-Marc Andreesen of Andreeson Horowitz a $4 Billion venture capital firm.
+Marc Andreesen was the guy who renamed Livescript. Andreeson Horowitz is a $4 Billion venture capital firm.
 
 Andreesen Horowitz has invested in companies like Facebook, Twitter, Airbnb, Github, etc.
 
@@ -292,6 +268,54 @@ Who can tell me what the ES in ES6 stands for?
 
 ---
 
+## Vocabulary
+
+<dl>
+  <dt>Client</dt>
+  <dd>The computer requesting the web page.</dd>
+
+  <dt>Server</dt>
+  <dd>The computer responding to the request and returning HTML.</dd>
+</dl>
+
+Note:
+When you load a webpage in your browser, you are the client.
+
+The computer that returns HTML is the server.
+
+---
+
+## Clients &amp; Servers
+
+![](/images/client-server.png)
+
+JavaScript runs "client side"
+
+JavaScript also runs "server side" (node.js)
+
+Note:
+Here is a picture of this transaction...
+
+Traditionally, Javascript has always been associated with the client side.
+
+---
+
+## More Vocabulary
+
+<p><strong>Front-End:</strong> HTML, CSS, Javascript</p>
+
+<figure>
+  ![](/images/frontend-v-backend.jpg)
+  <figcaption>Source: <a href="http://skillcrush.com/2012/08/13/frontend-vs-backend-2/">skillcrush.com</a></figcaption>
+</figure>
+
+<p><strong>Back-End:</strong> Databases, Webservers, etc.</p>
+
+Note:
+When you 'view source', what you're seeing is the front-end code. HTML, CSS & Javascript.
+
+---
+
 ## Front-End Stack
 
 __HTML__: Content Layer  
@@ -324,6 +348,13 @@ __Javascript__: Behavior Layer
 
 ![](/images/source-code.png) <!-- .element: class="no-border" -->
 
+Note:
+How do you get the scripts to run in the browser? You use the script tag.
+
+If the tag includes a src attribute, the browser will load the contents of the specified file.
+
+If there's no src attribute, the browser will execute any Javascript contained inside.
+
 ---
 
 ## Let's Develop It
@@ -336,8 +367,6 @@ __Javascript__: Behavior Layer
 
 1. Add an __index.html__ file and between the __&lt;body>__ tags, add a __&lt;script>__ tag referencing the file you created in the last step
 1. Open __index.html__ in a browser
-
-
 
 ---
 
@@ -364,7 +393,7 @@ __Javascript__: Behavior Layer
 ## Variables
 
 * Variables hold content 
-* Words, numbers, dates, true/false values and more 
+* Words, numbers, true/false values and more...
 
 Declare a variable (Give it a name) 
 
@@ -484,9 +513,9 @@ Names are case-sensitive
 
 Math-y expressions! 
 
-    var bananas = 5;
+    var apples = 5;
     var oranges = 2;
-    var fruit = bananas + oranges;
+    var fruit = apples + oranges;
 
 Note:
 An expression is any valid unit of code that resolves to a value.
@@ -558,9 +587,9 @@ Javascript can execute under certain conditions
 An example...
 
 
-    var bananas = 1;
-    if (bananas < 2) {
-      console.log("Buy more bananas!");
+    var apples = 1;
+    if (apples < 2) {
+      console.log("Buy more apples!");
     }
 
 
@@ -589,10 +618,10 @@ The 3 equal signs mean "equality without type coercion". Using the triple equals
 
 Evaluate two conditions at once with two ampersands (`&&`)
 
-    var bananas = 5;
+    var apples = 5;
     var oranges = 2;
 
-    if (bananas > 3 && oranges > 3) {
+    if (apples > 3 && oranges > 3) {
       console.log('Eat fruit!');
     }
 
@@ -607,12 +636,12 @@ Evaluate two conditions at once with two ampersands (`&&`)
 |`!`|NOT|
 
 
-    if (bananas < 2 || oranges < 2) {
+    if (apples < 2 || oranges < 2) {
       console.log('Buy fruit!');
     }
 
-    if ( !(bananas >= 0) ) {
-      console.log('You have negative bananas??');
+    if ( !(apples >= 0) ) {
+      console.log('You have negative apples??');
     }
 
 ---
@@ -621,12 +650,12 @@ Evaluate two conditions at once with two ampersands (`&&`)
 
 Use `else` to perform an alternative action&hellip;
 
-    var bananas = 5;
+    var apples = 5;
     
-    if (bananas > 3){
-      console.log('Eat a banana!');
+    if (apples > 3){
+      console.log('Eat an apple!');
     } else {
-      console.log('Buy a banana!');
+      console.log('Buy an apple!');
     }
 
 ---
@@ -651,13 +680,21 @@ You can use `else if` to have multiple choices
 
 ## Let's Develop It
 
-Add an `if/else` statement to our lifetime supply calculator so that if the lifetime supply is greater than 40,000, you say "Wow! That's a lot!" otherwise say, "Moderation is the best!"
+Add an `if/else` statement to our lifetime supply calculator so that if the lifetime supply is greater than 40,000, you say "Wow! That's a lot!"
+
+---
+
+## What Is A Function
+
+* Re-usable collection of statements
+* Performs a specific task
+* Helps organize your code
+
+![](/images/functions.png) <!-- .element: class="no-border" -->
 
 ---
 
 ## Functions
-
-Functions are re-usable collections of statements
 
 Declare a function
 
@@ -728,7 +765,7 @@ For example&hellip;
 
 ## Variable Scope
 
-JavaScript variables have two scopes...
+_The location where you declare a variable will affect where it can be used within your code._
 
 <dl>
   <dt>Local Scope</dt>
