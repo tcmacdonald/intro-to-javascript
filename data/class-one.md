@@ -1,4 +1,4 @@
-![Girl Develop It](/images/gdi-ample.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/gdi_logo_badge.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -202,7 +202,7 @@ Things were pretty quiet after 1998 until...
 * _2006_ - __jQuery__ (utility library)
 * _2008_ - __Google V8__ (javascript implementation)
 * _2010_ - __Node__ (web server)
-* _2015_ - __ES6__ (next incarnation)
+* _2015_ - __ES6__ (officially published standard, June 17)
 
 <figcaption>Source: <a href="http://fbcovergen.com">fbcovergen.com</a></figcaption>
 ![](/images/evolution3.png) <!-- .element: class="no-border" -->
@@ -218,6 +218,7 @@ Web server written on top of the Google V8 engine. Capable of handling alot more
 
 <b>ES6</b>  
 Who can tell me what the ES in ES6 stands for?
+
 
 ---
 
