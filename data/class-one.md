@@ -273,10 +273,10 @@ Who can tell me what the ES in ES6 stands for?
 
 <dl>
   <dt>Client</dt>
-  <dd>The computer requesting the web page.</dd>
+  <dd>The computer requesting the web page.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
 
   <dt>Server</dt>
-  <dd>The computer responding to the request and returning HTML.</dd>
+  <dd>The computer responding to the request and returning HTML.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
 </dl>
 
 Note:
@@ -292,7 +292,7 @@ The computer that returns HTML is the server.
 
 JavaScript runs "client side"
 
-JavaScript also runs "server side" (node.js)
+JavaScript also runs "server side" (node.js) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
 Here is a picture of this transaction...
