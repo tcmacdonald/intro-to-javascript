@@ -1,4 +1,4 @@
-![Girl Develop It](/images/gdi-ample.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/gdi_logo_badge.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -36,12 +36,12 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Let's Review
 
-* What is a variable?
-* What data-types are available in Javascript?
-* Why would you use a function?
-* What element links a JS file to an HTML file?
-* What's the difference between `=` and `===` ?
-* How do you negate a statement?
+* What is a variable? <!-- .element: class="fragment" data-fragment-index="0" -->
+* What data-types have we discussed? <!-- .element: class="fragment" data-fragment-index="1" -->
+* Why would you use a function? <!-- .element: class="fragment" data-fragment-index="2" -->
+* What element links a JS file to an HTML file? <!-- .element: class="fragment" data-fragment-index="3" -->
+* What's the difference between = and ===? <!-- .element: class="fragment" data-fragment-index="4" -->
+* How do you negate a statement? <!-- .element: class="fragment" data-fragment-index="5" -->
 
 Note:
 String, Number, Boolean, Array, Object, undefined and null
@@ -50,98 +50,50 @@ You'd use a function to reduce duplication of code. Write it once, call it many 
 
 ---
 
-## Loops
+## Data types
 
-_A "loop" is a set of instructions executed over and over again until a certain condition is met._
+### undefined <!-- .element: class="dark" -->
 
-<br>
-You would use a loop to...
+http://mdn.io/undefined 
 
-* Display each item in an array
-* Create X number of divs
-* Manipulate each image on a page
+Doesn't exist or has not been assigned a value.
 
----
+    var favorite_cookie;
 
-## The while loop
-
-You use while loops, if you don't know how many times you'll loop.
-
-    while(condition) {
-      // statements to repeat
-    }
-
----
-
-## The while loop
-
-An example...
-
-    var x = 0;
-    while(x < 5) {
-      console.log(x);
-      x++;
-    }
-
-Review: '++' means to increment by 1.
+    console.log(favorite_cookie); // 'undefined'
 
 Note:
-What happens if we forget x++;? The loop will never end!
+A  declared variable that has not been initialized will return `undefined`.
 
 ---
 
-## The for loop
+## Data types
 
-Use a <code>for</code> loop, if you know how many times you need to loop.
+### null <!-- .element: class="dark" -->
 
-    for(initialize; condition; update) {
-      // statements to repeat
-    }
+http://mdn.io/null
 
-Note:
-3 statements are passed to the for loop... initialize, condition and update.
+A purposely empty value.
 
-* Initialize and declare a number
-* Check if that number has reached the limit
-* Update will increment
-
+    var favorite_cookie = null;
 
 ---
 
-## The for loop
+## Data types
 
-An example...
+### Array <!-- .element: class="dark" -->
 
-    for(var i = 0; i < 5; i++) {
-      console.log(i);
-    }
+http://mdn.io/array 
 
-Note:
+Collections of values. 
 
-Less danger of an infinite loop. All conditions are at the top!
+    var numbers = [1,2,3,4,5];
 
----
-
-## Array
-
-_An array is a data-type that holds a list of values._
-
-
-An example...
-
-    var array_name = [element0, element1, ...];
-
----
-
-## Array
-
-    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-    var numbers = [16, 27, 88];
-    var things = ['Rainbows', 7, 'Horseshoes'];
-
-The length property reports the size of the array:
-
-    console.log(colors.length);
+    var socks = [
+      'pink',
+      'striped',
+      'argyle'
+    ];
 
 ---
 
@@ -159,9 +111,16 @@ The number inside the brackets is called an "index"
 
 Arrays in JavaScript are "zero-indexed", which means we start counting from zero.
 
-    var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
-    var first_color = colors[0];
-    var last_color = colors[6];
+    var colors = [
+      'Red',
+      'Orange',
+      'Blue',
+      'Yellow'
+    ];
+
+    var first_color = colors[0]; // Red
+
+    var last_color = colors[3]; // Yellow
 
 ---
 
@@ -169,8 +128,13 @@ Arrays in JavaScript are "zero-indexed", which means we start counting from zero
 
 Use bracket notation to change the item in an array:
 
-    var animals = ['Corgis', 'Otters', 'Octopi'];
-        animals[0] = 'Bunnies';
+    var animals = [
+      'Corgis',
+      'Otters',
+      'Octopi'
+    ];
+
+    animals[0] = 'Bunnies';
 
 Or to add to an array:
 
@@ -179,6 +143,10 @@ Or to add to an array:
 ---
 
 ## Array Methods
+
+Get the total number of items within an array...
+
+    arr.length
 
 Add one or more items onto an array...
 
@@ -214,6 +182,77 @@ Join all elements of an array into a string...
 
 ---
 
+## Loops
+
+_A "loop" is a set of instructions executed over and over again until a certain condition is met._
+
+<br>
+You would use a loop to...
+
+* Display each item in an array
+* Create X number of divs
+* Manipulate each image on a page
+
+---
+
+## The while loop
+
+You use while loops, if you don't know how many times you'll loop.
+
+    while(condition) {
+      // statements to repeat
+    }
+
+---
+
+## The while loop
+
+An example...
+
+    var is_running = true;
+
+    while(is_running) {
+
+      // Something happens here...
+
+      if(stop_running) {
+        is_running = false;
+      }
+    }
+
+---
+
+## The for loop
+
+Use a <code>for</code> loop, if you know how many times you need to loop.
+
+    for(initialize; condition; update) {
+      // statements to repeat
+    }
+
+Note:
+3 statements are passed to the for loop... initialize, condition and update.
+
+* Initialize and declare a number
+* Check if that number has reached the limit
+* Update will increment
+
+---
+
+## The for loop
+
+An example...
+
+    for(var i = 0; i < 5; i++) {
+      console.log(i);
+    }
+
+Note:
+
+Less danger of an infinite loop. All conditions are at the top!
+
+---
+
 ## Loops and Arrays
 
 Use a for loop to easily look at each item in an array:
@@ -228,28 +267,27 @@ Use a for loop to easily look at each item in an array:
 
 ## Let's Develop It
 
-__Step #1:__
-<br>Download  the [Starter Kit](https://github.com/tcmacdonald/intro-to-javascript/archive/0.0.1.zip)
+1. Create an array called `favorite_foods` and add some items to it.
+1. Loop over the array and build a string that ultimately evaluates to...
 
-__Step #2:__
-<br>Create a function called `favorites()` which...
+    "My favorite foods are AA, BB, CC, etc."
 
-1. Creates an array and loops through the items.
-1. Outputs a string to the console which reads...
-
-
-    My favorite things are XX, YY, ZZ.
+1. Log that string to the console.
 
 ---
 
-## Objects
+## Data types
 
-Objects are a data type that let us store a collection of properties and methods.
+### Object <!-- .element: class="dark" -->
+
+http://mdn.io/object 
+
+Collection of properties and methods.
 
     var object_name = {
       property: value,
       property: value,
-      ...
+      // More stuff here...
     };
 
 ---
@@ -258,11 +296,12 @@ Objects are a data type that let us store a collection of properties and methods
 
 For example...
 
-    var charlie = {
-      age: 8,
-      name: "Charlie Brown",
-      likes: ["baseball", "The little red-haired girl"],
-      pet: "Snoopy"
+    var kid = {
+      name: 'Atticus',
+      age: 2.3,
+      hair_color: 'Platinum',
+      likes: ['backpacks', 'trains', 'cookies']
+      // More stuff here...
     };
 
 ---
@@ -272,14 +311,16 @@ For example...
 Access values of properties using "dot notation".
 
 
-    var charlie = {
-      age: 8,
-      name: "Charlie Brown",
-      likes: ["baseball", "The little red-haired girl"],
-      pet: "Snoopy"
+    var kid = {
+      name: 'Atticus',
+      age: 2.3,
+      hair_color: 'Platinum',
+      likes: ['backpacks', 'trains', 'cookies']
     };
 
-    var pet = charlie.pet;
+    var hair_color = kid.hair_color;
+
+    var favorite = kid.likes[0];
 
 ---
 
@@ -287,11 +328,11 @@ Access values of properties using "dot notation".
 
 You can also use "bracket notation" (like arrays):
 
-    var name = charlie['name'];
+    var name = kid['name'];
 
 Non-existent properties will return undefined:
 
-    var gender = charlie.gender;
+    var gender = kid.gender;
     console.log(gender); // undefined
 
 ---
@@ -302,15 +343,15 @@ Use dot or bracket notation with the assignment operator to change objects.
 
 Change existing properties:
 
-    charlie.name = "Chuck";
+    kid.name = "Gus";
 
 Or add new properties:
 
-    charlie.gender = "male";
+    kid.gender = "male";
 
 You can also delete properties:
 
-    delete charlie.gender;
+    delete kid.gender;
 
 ---
 
@@ -318,14 +359,14 @@ You can also delete properties:
 
 Arrays can hold objects too!
 
-    var peanuts = [
+    var kids = [
       {
-        name: "Charlie Brown", 
-        pet: "Snoopy"
+        name: "Atticus",
+        age: 2.3
       },
       {
-        name: "Linus van Pelt",
-        pet: "Blue Blanket"
+        name: "Avery",
+        age: 3.1
       }
     ];
 
@@ -335,9 +376,10 @@ Arrays can hold objects too!
 
 That means we can use a for loop!
 
-    for (var i = 0; i < peanuts.length; i++) {
-      var peanut = peanuts[i];
-      console.log(peanut.name + ' has a pet named ' + peanut.pet + '.');
+    for (var i = 0; i < kids.length; i++) {
+      var kid = kids[i];
+      var str = kid.name + ' is ' + kid.age + ' yrs. old.';
+      console.log(str);
     }
 
 ---
@@ -346,29 +388,30 @@ That means we can use a for loop!
 
 You can pass an object into a function as an argument...
 
-    function describe(character) {
-      console.log(character.name + ' has a pet named ' + character.pet + '.');
+    function describe(kid) {
+      var str = kid.name + ' is ' + kid.age + ' yrs. old.';
+      console.log(str);
     }
 
-    var peanut = {
-      name: "Charlie Brown",
-      pet: "Snoopy"
+    var kid = {
+      name: "Seamus",
+      age: 5.25
     };
 
-    describe(peanut);
+    describe(kid);
 
 ---
 
 ## Let's Develop It
 
 __Step #1:__
-<br>Create a function called `my_friends()` which...
 
-1. Creates an array of friend objects, which defines name and hair color for each of your friends.
-1. Loop through the array and describe each friend in the console.
+1. Create an array of recipe objects. Each object should define the name, list of ingredients and number of calories.
+1. Loop through the array and describe each recipe in the console.
 
 __Step #2:__
-<br>Make a separate `describe_friend()` function and update `my_friends()` to use that.
+
+Move the logic from your loop into a function called `describe_recipe()`. Update the loop to call that new function on each iteration.
 
 ---
 
@@ -425,14 +468,14 @@ Find element by id...
 
 Find element by tag name (`p`, `li`, `div`, etc.)
 
-    <li class="peanut">Charlie Brown</li>
-    <li class="peanut">Linus van Pelt</li>
+    <li class="kid">Atticus</li>
+    <li class="kid">Avery</li>
 
     var items = document.getElementsByTagName('li');
 
 Or by class name...
 
-    document.getElementsByClassName('peanut');
+    document.getElementsByClassName('kid');
 
 ---
 
@@ -441,8 +484,10 @@ Or by class name...
 * Methods are functions associated with an object
 * Used with dot notation
 
-Previously seen example:
+Previously seen examples:
 
+    document.write('Hello world!');
+    console.log(arr.length);
     var img = document.getElementById('mainpicture');
 
 ---
@@ -509,7 +554,7 @@ Some examples...
 
 ## Let's Develop It
 
-* Modify your existing three functions to add new elements to the screen instead of the console.
+* Modify your existing functions to add new elements to the screen instead of the console.
 * Keep in mind how to find an element, how to append an element, and how to change the inner html of an element.
 * There are lots of possible solutions! Be creative!
 
