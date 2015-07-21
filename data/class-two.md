@@ -36,17 +36,31 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Let's Review
 
-* What is a variable? <!-- .element: class="fragment" data-fragment-index="0" -->
-* What data-types have we discussed? <!-- .element: class="fragment" data-fragment-index="1" -->
-* Why would you use a function? <!-- .element: class="fragment" data-fragment-index="2" -->
-* What element links a JS file to an HTML file? <!-- .element: class="fragment" data-fragment-index="3" -->
-* What's the difference between = and ===? <!-- .element: class="fragment" data-fragment-index="4" -->
-* How do you negate a statement? <!-- .element: class="fragment" data-fragment-index="5" -->
+* Variables
+* `if/else` statements
+* Functions
+* Variable Scope
+
+![Girl Develop It](/images/class-one-review.png) <!-- .element: class="no-border" -->
 
 Note:
 String, Number, Boolean, Array, Object, undefined and null
 
 You'd use a function to reduce duplication of code. Write it once, call it many times.
+
+---
+
+## Data types
+
+* String
+* Number
+* Boolean
+* Array <!-- .element: class="fragment" -->
+* Objects <!-- .element: class="fragment" -->
+* undefined <!-- .element: class="fragment" -->
+* null <!-- .element: class="fragment" -->
+
+...and sometimes NaN <!-- .element: class="fragment" -->
 
 ---
 
@@ -60,7 +74,7 @@ Doesn't exist or has not been assigned a value.
 
     var favorite_cookie;
 
-    console.log(favorite_cookie); // 'undefined'
+    console.log(favorite_cookie); // undefined
 
 Note:
 A  declared variable that has not been initialized will return `undefined`.
@@ -76,6 +90,19 @@ http://mdn.io/null
 A purposely empty value.
 
     var favorite_cookie = null;
+
+---
+
+## Data types<small>(but not really)</small>
+
+### <span style="color: #222;">N<span style="font-size: 75%;">a</span>N</span>
+
+http://mdn.io/nan
+
+'Not a Number'
+
+    var result = 4 / 'test';
+    console.log(result); // NaN
 
 ---
 
@@ -195,6 +222,12 @@ You would use a loop to...
 
 ---
 
+## How a Loop Works
+
+![How a Loop Works](/images/how-a-loop-works.png) <!-- .element: class="no-border" -->
+
+---
+
 ## The while loop
 
 You use while loops, if you don't know how many times you'll loop.
@@ -273,6 +306,8 @@ Use a for loop to easily look at each item in an array:
     "My favorite foods are AA, BB, CC, etc."
 
 1. Log that string to the console.
+
+_**Bonus:** How could you do this same task without using a loop?_
 
 ---
 
@@ -442,6 +477,7 @@ Parent (`parentNode`), children (`childNodes, firstChild`), siblings (`prevSibli
 
     var body_node = document.body; // <body>
     var html_node = document.body.parentNode; // <html>
+
     for (var i = 0; i < document.body.childNodes.length; i++) {
       var child_node = document.body.childNodes[i];
       //could be <p>, <h1>, etc.
@@ -518,7 +554,7 @@ You can set innerHTML yourself to change the contents of the node:
 
     document.body.innerHTML = '<p>I changed the whole page!</p>';
 
-You can also just add to the innerHTML instead of replace everything:
+You can also just add to the innerHTML instead of replacing everything:
 
     document.body.innerHTML += "...just adding this bit at the end of the page.";
 
