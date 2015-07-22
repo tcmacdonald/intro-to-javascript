@@ -35,7 +35,14 @@ block content
             a(href='/classes/two') Slides
           li(class='list-group-item')
             a(href='/homework/two') Homework
-          li(class='list-group-item') &nbsp;
+          li(class='list-group-item')
+            ul(class='list-unstyled list-inline')
+              li
+                | In-Class Exercises:
+              li
+                a(href='http://jsbin.com/sukosi/6/edit?js,console') Part 1
+                | &nbsp;&middot; 
+                a(href='http://jsbin.com/jubage/33/edit?js,console') 2
           li(class='list-group-item') &nbsp;
 
     each val in [3, 4]
