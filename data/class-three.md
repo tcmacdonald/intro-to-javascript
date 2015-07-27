@@ -1,4 +1,4 @@
-![Girl Develop It](/images/gdi-ample.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/gdi_logo_badge.png) <!-- .element: class="no-border" -->
 
 ---
 

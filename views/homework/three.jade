@@ -19,67 +19,82 @@ block content
         li <i>Hint: jQuery isn't available so you'll have to get creative to target these elements.</i>
       br
 
+  .row
+    div(class='col-md-8 col-md-offset-2')
+      hr
+      h3 Task #2: Grocery List
+      ul
+        li Create a new <a href="http://jsbin.com">JS Bin</a> and add jQuery to the page.
+        li Add an empty <code>ul</code> element to the page.
+        li Add a <code>form</code> element containing one <code>input</code> field and a submit <code>button</code>.
+        li Attach a function to the <code>form</code>'s submit event which takes the value of <code>input</code> and appends it to the <code>ul</code>.
+        li <i>Hint: Each list item should be an <code>li</code> element.</i>
+        li <i>Bonus: Add a link to each list-item that when clicked, removes the parent <code>li</code> element.
+
+      
   //-
     .row
       div(class='col-md-12')
         img(src='/images/google-dom.png', class='img-responsive')
 
-  .row
-    div(class='col-md-8 col-md-offset-2')
-      div(class='page-header')
-        h3
-          span(class='text-danger') Task #2: 
-          | Grocery List
-        p(class='lead') It's time to go Krogering– build a form that you can use to quickly build a grocery list when you're on the go. All you need is a list and a form with a text field. When the form is submitted, take the contents of the text field and append it to the list. Don't forget the cat food!</p>
-      ul(class='list-unstyled')
-        li 1. Create a new <a href="http://jsbin.com">JS Bin</a> and add jQuery to the page.
-        li 2. Add an empty <code>ul</code> element to the page.
-        li 3. Add a <code>form</code> element containing one <code>input</code> field and a submit <code>button</code>.
-        li 4. Attach a function to <code>form</code>'s submit event which takes the value of <code>input</code> and appends it to the <code>ul</code>.
-      br
-      p(class='text-warning')
-        | <i><strong>Hint:</strong> Each list-item should be an <code>li</code> element.</i>
+    .row
+      div(class='col-md-8 col-md-offset-2')
+        div(class='page-header')
+          h3
+            span(class='text-danger') Task #2: 
+            | Grocery List
+          p(class='lead') It's time to go Krogering– build a form that you can use to quickly build a grocery list when you're on the go. All you need is a list and a form with a text field. When the form is submitted, take the contents of the text field and append it to the list. Don't forget the cat food!</p>
+        ul(class='list-unstyled')
+          li 1. Create a new <a href="http://jsbin.com">JS Bin</a> and add jQuery to the page.
+          li 2. Add an empty <code>ul</code> element to the page.
+          li 3. Add a <code>form</code> element containing one <code>input</code> field and a submit <code>button</code>.
+          li 4. Attach a function to <code>form</code>'s submit event which takes the value of <code>input</code> and appends it to the <code>ul</code>.
         br
-        | <i><strong>Bonus:</strong> Add a link to each list-item that when clicked, will remove the item.</i>
-      hr
-
-  .row
-    div(class='col-md-12')
-      br
-      | <iframe width="100%" height="300" src="//jsfiddle.net/tcmacdonald/84qe7ewy/1/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      //-
-        | <a class="jsbin-embed" href="http://jsbin.com/nenasa/27/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.30.3"></script>
-      br
-      br
-      br
-
-      //-
-        h3 Task #2: The Reading List, Part 2
-        ul
-          li Create a webpage with an <code>h1</code> of "My Book List".
-          li Add a <code>script</code> tag to the page, where all your JS will go.
-          li Copy the array of books from the previous exercise.
-          li Iterate through the array of books. For each book, create a <code>p</code> element with the book title and author and append it to the page.
-          li <i>Bonus: Use a <code>ul</code> and <code>li</code> to display the books.</i>
-          li <i>Bonus: Add a property to each book with the URL of the book cover, and add an <code>img</code> element for each book on the page.</i>
-          li <i>Bonus: Change the style of the book depending on whether you have read it or not.</i>
-        br
-        | <a class="jsbin-embed" href="http://jsbin.com/bubayi/7/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
-
-
+        p(class='text-warning')
+          | <i><strong>Hint:</strong> Each list-item should be an <code>li</code> element.</i>
+          br
+          | <i><strong>Bonus:</strong> Add a link to each list-item that when clicked, will remove the item.</i>
         hr
-        h3 Task #3: Color Switcher
-        ul
-          li Create a new webpage with an <code>h1</code> of "Color Switcher".
-          li Add jQuery to the page (via the <a href="https://code.jquery.com/jquery-2.1.4.min.js">CDN</a>)
-          li Add a <code>ul</code> element with 5-10 <code>li</code> children, each including random strings and random classes.
-          li Add a <code>form</code> element with two <code>input</code> fields (class_name, background_color) and a submit button.
-          li Add some Javascript so that when the form is submitted, the value supplied for background_color is applied to all <code>li</code> elements that have the specified class name.
-        br
-        | <a class="jsbin-embed" href="http://jsbin.com/zixigi/24/embed?html,js,output#J:L41">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-        hr
-      br
-      br
-      br
-      br
+  //-
+    .row
+      div(class='col-md-12')
+        //-
+          br
+          | <iframe width="100%" height="300" src="//jsfiddle.net/tcmacdonald/84qe7ewy/1/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        //-
+          | <a class="jsbin-embed" href="http://jsbin.com/nenasa/27/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.30.3"></script>
+        br
+        br
+        br
+
+        //-
+          h3 Task #2: The Reading List, Part 2
+          ul
+            li Create a webpage with an <code>h1</code> of "My Book List".
+            li Add a <code>script</code> tag to the page, where all your JS will go.
+            li Copy the array of books from the previous exercise.
+            li Iterate through the array of books. For each book, create a <code>p</code> element with the book title and author and append it to the page.
+            li <i>Bonus: Use a <code>ul</code> and <code>li</code> to display the books.</i>
+            li <i>Bonus: Add a property to each book with the URL of the book cover, and add an <code>img</code> element for each book on the page.</i>
+            li <i>Bonus: Change the style of the book depending on whether you have read it or not.</i>
+          br
+          | <a class="jsbin-embed" href="http://jsbin.com/bubayi/7/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+
+          hr
+          h3 Task #3: Color Switcher
+          ul
+            li Create a new webpage with an <code>h1</code> of "Color Switcher".
+            li Add jQuery to the page (via the <a href="https://code.jquery.com/jquery-2.1.4.min.js">CDN</a>)
+            li Add a <code>ul</code> element with 5-10 <code>li</code> children, each including random strings and random classes.
+            li Add a <code>form</code> element with two <code>input</code> fields (class_name, background_color) and a submit button.
+            li Add some Javascript so that when the form is submitted, the value supplied for background_color is applied to all <code>li</code> elements that have the specified class name.
+          br
+          | <a class="jsbin-embed" href="http://jsbin.com/zixigi/24/embed?html,js,output#J:L41">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+          hr
+        br
+        br
+        br
+        br

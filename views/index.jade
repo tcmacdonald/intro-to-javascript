@@ -45,42 +45,20 @@ block content
                 a(href='http://jsbin.com/jubage/33/edit?js,console') 2
           li(class='list-group-item') &nbsp;
 
-    each val in [3, 4]
-      div(class='col-md-3 col-sm-6')
-        div(class='panel panel-default')
-          div(class='panel-heading')
-            strong Class ##{val}
-          ul(class='list-group')
-            li(class='list-group-item') Coming soon!
-            li(class='list-group-item') &nbsp;
-            li(class='list-group-item') &nbsp;
-            li(class='list-group-item') &nbsp;
-
-    //-
-      // Class #2
-      div(class='col-md-3 col-sm-6')
-        div(class='panel panel-default')
-          div(class='panel-heading')
-            strong Class #2
-          ul(class='list-group')
-            li(class='list-group-item')
-              a(href='/classes/two') Slides
-            li(class='list-group-item')
-              a(href='http://jsbin.com/bixeve/1/edit?js,output') In-Class Exercises
-              |  (jsbin.com)
-            li(class='list-group-item')
-              a(href='/homework/two') Homework
-            li(class='list-group-item')
-              | &nbsp;
-
-      // Class #3
-      div(class='col-md-3 col-sm-6')
-        div(class='panel panel-default')
-          div(class='panel-heading')
-            strong Class #3
-          ul(class='list-group')
-            li(class='list-group-item')
-              a(href='/classes/three') Slides
+    // Class #3
+    div(class='col-md-3 col-sm-6')
+      div(class='panel panel-default')
+        div(class='panel-heading')
+          strong Class #3
+        ul(class='list-group')
+          li(class='list-group-item')
+            a(href='/classes/three') Slides
+          li(class='list-group-item')
+            a(href='/homework/three') Homework
+          li(class='list-group-item')
+            a(href='http://oscarotero.com/jquery/') jQuery Cheatsheet
+          li(class='list-group-item') &nbsp;
+          //-
             li(class='list-group-item')
               ul(class='list-unstyled list-inline')
                 li
@@ -92,11 +70,18 @@ block content
                   | &nbsp;&middot; 
                   a(href='http://jsbin.com/dujegu/49/edit?html,js,output') 3
 
-            li(class='list-group-item')
-              a(href='/homework/three') Homework
-            li(class='list-group-item')
-              a(href='http://oscarotero.com/jquery/') jQuery Cheatsheet
+    each val in [4]
+      div(class='col-md-3 col-sm-6')
+        div(class='panel panel-default')
+          div(class='panel-heading')
+            strong Class ##{val}
+          ul(class='list-group')
+            li(class='list-group-item') Coming soon!
+            li(class='list-group-item') &nbsp;
+            li(class='list-group-item') &nbsp;
+            li(class='list-group-item') &nbsp;
 
+    //-
       // Class #2
       div(class='col-md-3 col-sm-6')
         div(class='panel panel-default')
