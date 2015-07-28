@@ -282,9 +282,9 @@ If you want multiple events to happen on the same element, you should use the `b
 
 ## Let's Develop It
 
-* Add a div to your html that is 100px by 200px
-* Bind events to the div in your javascript file
-* Don't forget to surround your events with document ready
+* Add a div to your html that is 100px by 100px
+* Bind some events to the div with Javascript
+* Don't forget to put your code in a document ready statement
 * Try to change size, color, or the html inside the div
 
 ---
