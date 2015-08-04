@@ -68,16 +68,32 @@ block content
           li(class='list-group-item')
             a(href='http://oscarotero.com/jquery/') jQuery Cheatsheet
 
-    each val in [4]
-      div(class='col-md-3 col-sm-6')
-        div(class='panel panel-default')
-          div(class='panel-heading')
-            strong Class ##{val}
-          ul(class='list-group')
-            li(class='list-group-item') Coming soon!
-            li(class='list-group-item') &nbsp;
-            li(class='list-group-item') &nbsp;
-            li(class='list-group-item') &nbsp;
+    // Class #4
+    div(class='col-md-3 col-sm-6')
+      div(class='panel panel-default')
+        div(class='panel-heading')
+          strong Class #4
+        ul(class='list-group')
+          li(class='list-group-item')
+            a(href='/classes/four') Slides
+          li(class='list-group-item')
+            a(href='#',class='schools-out') Homework
+          li(class='list-group-item')
+            | &nbsp;
+          li(class='list-group-item')
+            | &nbsp;
+
+    //-
+      each val in [4]
+        div(class='col-md-3 col-sm-6')
+          div(class='panel panel-default')
+            div(class='panel-heading')
+              strong Class ##{val}
+            ul(class='list-group')
+              li(class='list-group-item') Coming soon!
+              li(class='list-group-item') &nbsp;
+              li(class='list-group-item') &nbsp;
+              li(class='list-group-item') &nbsp;
 
     //-
       // Class #2

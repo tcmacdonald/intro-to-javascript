@@ -1,4 +1,4 @@
-![Girl Develop It](/images/gdi-ample.png) <!-- .element: class="no-border" -->
+![Girl Develop It](/images/gdi_logo_badge.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -167,14 +167,6 @@ jQuery also supports psuedo selectors.
 
 ## Selectors
 
-You can select an element if it contains a certain value.
-
-![Jquery Selectors](/images/jquery-select-contains.png) <!-- .element: class="no-border" -->
-
----
-
-## Selectors
-
 You can select only even elements (or only odd).
 
 ![Jquery Selectors](/images/jquery-select-even-odd.png) <!-- .element: class="no-border" -->
@@ -202,7 +194,7 @@ Using the Bootstrap example, open the console and answer the following questions
 
 ## Traversing the DOM
 
-Once you've selected the element you want, you can access it's `.parents()`, `.children()` and `.siblings()`
+Once you've selected an element, you can access that element's `.parents()`, `.children()` and `.siblings()`
 
 ![Traversing the DOM](/images/jquery-traverse-children.png) <!-- .element: class="no-border" -->
 
@@ -210,7 +202,7 @@ Once you've selected the element you want, you can access it's `.parents()`, `.c
 
 ## Traversing the DOM
 
-Or you can get just the element's `.parent()`
+You can get just the element's immediate `.parent()`
 
 ![Traversing the DOM](/images/jquery-traverse-parent.png) <!-- .element: class="no-border" -->
 
@@ -229,14 +221,6 @@ You can get the descendants of an element, by passing a selector to `.find()`
 You can grab the `.first()` or `.last()` element in a collection returned by jQuery.
 
 ![Traversing the DOM](/images/jquery-traverse-first-last.png) <!-- .element: class="no-border" -->
-
----
-
-## Traversing the DOM
-
-You can target individual items in an array with the `.eq()` method.
-
-![Traversing the DOM](/images/jquery-traverse-eq.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -261,6 +245,14 @@ You can use `.prev()` to get the previous, immediate sibling of an element.
 You can use `.filter()` to reduce an array by a specific selector.
 
 ![Traversing the DOM](/images/jquery-traverse-filter.png) <!-- .element: class="no-border" -->
+
+---
+
+## Traversing the DOM
+
+You can target individual items in an array with the `.eq()` method.
+
+![Traversing the DOM](/images/jquery-traverse-eq.png) <!-- .element: class="no-border" -->
 
 ---
 
