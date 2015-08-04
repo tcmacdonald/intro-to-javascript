@@ -26,6 +26,7 @@ _Girl Develop It is here to provide affordable and accessible programs to learn 
 
 ## Class Overview
 
+* Review / Homework
 * Selectors
 * Traversing the DOM
 * Elements
