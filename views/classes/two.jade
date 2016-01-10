@@ -1,0 +1,188 @@
+extends ../layouts/application.jade
+
+block content
+  h1.sr-only Introduction to Javascript: Loops, Array and Objects
+  div.page-header
+    h2 Class #2: The Fundamentals
+
+  p.lead
+    | Building upon the concepts covered in 
+    a(href='/classes/one') Class #1
+    | , here we discuss arrays and objects and the process &amp; usefulness of iterating over them to do stuff programmatically.
+
+  p
+    a.btn.btn-info
+      i.fa.fa-picture-o
+      |  &nbsp;View Slides
+    | &nbsp;&nbsp;
+    a.btn.btn-warning.disabled
+      i.fa.fa-codepen
+      |  &nbsp;View Codepen
+
+  // -
+    div.page-header
+      h2 Class Overview
+
+    p Let's imagine- you have a array of things you want to display on a webpage. Each thing is similar but also has it's own individual attributes, like color and name. This week we'll learn how to take a group of objects like this and print their attributes on the page.
+    br
+    ol
+      li Review
+      li Loops
+      li Arrays
+      li Objects
+
+    div.page-header
+      h2 Quiz
+
+    div.well
+      div.question
+        h4 1). What is a variable?
+        div.radio
+          each opt, i in ['A new Saison from Rhinegeist.','Container that holds a value.','A star whose brightness as seen from Earth is fluctuating.','None of the above.']
+            label
+              input(type='radio',name='1',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 2). How can you tell that a variable is a string?
+        div.radio
+          each opt, i in ['It has words.', 'It isn’t a number.', 'It has a semicolon.', 'It has single or double quotes.']
+            label
+              input(type='radio',name='2',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 3). What is a function?
+        div.radio
+          each opt, i in ['Container that holds a value.', 'Block of code designed to perform a particular task.', 'Relationship or expression involving one or more variables.', 'Part of the chorus to a song by School House Rock.']
+            label
+              input(type='radio',name='3',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 4). Why would you use a function?
+        div.radio
+          each opt, i in ['Reuse code more than once.', 'Different arguments produce different results.', 'Keep your code organized.', 'All of the above.']
+            label
+              input(type='radio',name='4',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 5). What element links a JS file to an HTML file?
+        div.radio
+          each opt, i in ['<head>', '<javascript>', '<script>', '<img>']
+            label
+              input(type='radio',name='5',value=(i+1))
+              code= opt
+            br
+
+      hr
+      div.question
+        h4 6). What's the difference between = and ==?
+        div.radio
+          each opt, i in ['Assignment vs. comparison.', 'Short vs. Long.', 'Stylistic preference.', 'SYKE! There is no difference.']
+            label
+              input(type='radio',name='6',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 7). How do you negate a statement?
+        div.radio
+          each opt, i in ['Execute it twice in a row.', 'Use two semicolons.', 'Put it in a function called negate()', 'Use the exclamation-point (!) operator']
+            label
+              input(type='radio',name='7',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 8). What is a data-type?
+        div.radio
+          each opt, i in ['Container that holds a value.', 'Defines the values that a variable can hold.', 'Defines the arguments a function can take.', 'None of the above.']
+            label
+              input(type='radio',name='8',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 9). How many days did it take to write Javascript?
+        div.radio
+          each opt, i in ['100 days', '1 week', '10 days', '3 months']
+            label
+              input(type='radio',name='9',value=(i+1))
+              = opt
+            br
+
+      hr
+      div.question
+        h4 10). Which data-type is used to store a collection of things?
+        div.radio
+          each opt, i in ['Variable', 'String', 'Function', 'Array']
+            label
+              input(type='radio',name='10',value=(i+1))
+              = opt
+            br
+
+
+  div.page-header
+    h2 Homework
+
+  // -
+    div.alert.alert-warning
+      p
+        strong Homework is due at the beginning of class, the following week.
+        br
+        | Please send your work, as either attached file(s) or a Codepen link to... 
+        em tcmacdonald [at] gmail [dot] com
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='#')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #1: 
+      | Even/Odd Counter
+    div.panel-body
+      ul
+        li Write a <code>for</code> loop that will iterate from 0 to 20.
+        li For each iteration, check if the current number is even or odd and report that to the screen (e.g. "2 is even")
+      //| <a class="jsbin-embed" href="http://jsbin.com/qazili/4/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='#')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #2: 
+      | Choices
+    div.panel-body
+      ul
+        li Create an array to hold your top choices (colors, presidential candidates, cold beverages, whatever).
+        li For each choice, log to the console a string like... "My #1 choice is blue."
+        li <i>Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is.</i>
+      //| <a class="jsbin-embed" href="http://jsbin.com/rahuma/8/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='#')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #3: 
+      | Reading List
+    div.panel-body
+      ul
+        li Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
+        li Iterate through the array of books. For each book, log the book title and book author like so: <strong>"The Hobbit by J.R.R. Tolkien"</strong>.
+        li Now use an <code>if/else</code> statement to change the output depending on whether you read it yet or not. If you read it, log a string like <i>'You already read "The Hobbit" by J.R.R. Tolkien'</i>, and if not, log a string like <i>'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'</i>
+      //| <a class="jsbin-embed" href="http://jsbin.com/mulani/7/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>

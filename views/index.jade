@@ -1,6 +1,110 @@
 extends ./layouts/application.jade
 
 block content
+  h1.sr-only Introduction to Javascript
+  div.page-header
+    h2 Course Overview
+
+  p.lead
+    | Welcome to the companion website for the four-part class series 
+    em 'Getting All Acquianted With Javascript &amp; Stuff' 
+    |  presented by the 
+    a(href='http://www.meetup.com/Girl-Develop-It-Cincinnati/') Cincinnati Chapter 
+    | of 
+    a(href='https://www.girldevelopit.com/') Girl Develop It
+
+  p The aim of this course is provide a comprehensive introduction to Javascript syntax and it's supporting libraries. We'll learn how it can be used to make web-pages more interactive &amp; intuitive while we scratch surface of what's possible with this dynamic scripting language. From the history of Javascript to general principles of programming to real-world examples of how you can use Javascript to solve everyday problems, we cover the basics and more.
+  p
+    br
+    a(class='btn btn-success', href='http://www.meetup.com/Girl-Develop-It-Cincinnati/events/226716550/') Reserve Your Seat Today
+
+  div.page-header
+    h2 Recommended Reading
+
+  p The only thing technically required for class is your attendance, a glacial patience and the bubbling enthusiasm of a precocious toddler. But if you're the over-acheiver type, you might find the following books interesting...
+  br
+
+  div.row
+    div.col-sm-4.col-xs-6
+      a(href='http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742')
+        figure.text-center
+          p
+            img(src='/images/crockford.png', class='img-responsive')
+          figcaption
+            strong Javascript: The Good Parts, 2008 
+            br
+            | Douglas Crockford
+          br
+
+    div.col-sm-4.col-xs-6
+      a(href='http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides/dp/0596805527')
+        figure.text-center
+          p
+            img(src='/images/flanagan.png', class='img-responsive')
+          figcaption
+            strong Javascript: The Definitive Guide, 2011 
+            br
+            | David Flanagan, 2011 (0596805527)
+          br
+
+    div.col-sm-4.col-xs-6
+      a(href='http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647')
+        figure.text-center
+          p
+            img(src='/images/duckett.png', class='img-responsive')
+          figcaption
+            strong Javascript &amp; Jquery, 2014 
+            br
+            | Jon Duckett
+          br
+  
+  div.page-header
+    h2 Online Resources
+
+  p Technology is always changing so its no surprise that the best resources for the latest in web technology can be found online. Here's a couple handy links that are often referenced during class...
+
+  br
+
+  div.media
+    div.media-left
+      i.fa.fa-4x.fa-border.fa-codepen
+    div.media-body
+      h4.media-heading
+        a(href='http://codepen.io') Codepen.io
+      p This site is a self-proclaimed "playground for front-end" and we'll be using it for writing and rendering HTML, CSS &amp; Javascript. It supports all the basic social constructs you've come to expect (following, liking, etc.) but also provides some handy features for classroom environments.
+
+  div.media
+    div.media-left
+      i.fa.fa-4x.fa-border.fa-code
+    div.media-body
+      h4.media-heading
+        a(href='https://oscarotero.com/jquery/') jQuery Cheatsheet
+      p A comprehensive overview of jQuery selectors, attributes, methods, event-handling, what-have-you. All presented in a concise, color-coded format thats easy on the eyes, this is a great reference for the design-minded internet intellectual.
+
+  div.media
+    div.media-left
+      i.fa.fa-4x.fa-border.fa-terminal
+    div.media-body
+      h4.media-heading
+        a(href='http://jqapi.com/') jQAPI - Alternative jQuery Documentation Browser
+      p For those in need of some serious speed (and details on how the <code>bind()</code> method works), try the jQAPI. Here, you'll find all the official jQuery documentation in a clear, easy to navigate format. No hispterish color schemes here, this is the nitty gritty and nothing else.
+
+  div.media
+    div.media-left
+      i.fa.fa-4x.fa-border.fa-book
+    div.media-body
+      h4.media-heading
+        a(href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript') A re-introduction to JavaScript
+      p This tutorial from Mozilla is one hardcore re-introduction to the fundamentals. The majority of what we cover in class is covered here, and while this version is undoubtedly 10x more detailed (it is Mozilla, after all) it does lack a certain &amp; intanglible "<em>je ne sais quoi</em>", if you get my drift.
+
+
+
+// - 
+//
+  div(class='page-header')
+    h3 tcm.gdicincy.com
+      small(class='pull-right') Presented by Girl Develop It, Cincinnati
+// -
   h1(class='text-center')!= title
 
   div(class='row')

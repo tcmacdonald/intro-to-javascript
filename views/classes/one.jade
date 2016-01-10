@@ -1,0 +1,98 @@
+extends ../layouts/application.jade
+
+block content
+  h1.sr-only Introduction to Javascript: Variables, Conditions and More
+  div.page-header
+    h2 Class #1: What Is This Javascript?
+
+  p.lead This week, we'll discuss the origins of the language and experiment with some fundamental concepts applicable to most modern programming languages.
+
+  p
+    a.btn.btn-info
+      i.fa.fa-picture-o
+      |  &nbsp;View Slides
+    | &nbsp;&nbsp;
+    a.btn.btn-warning.disabled
+      i.fa.fa-codepen
+      |  &nbsp;View Codepen
+
+  // -
+    div.page-header
+      h2 Class Overview
+
+    p
+      | Please come to class with your laptop and
+      em  don't forget the power cord
+      | . Be prepared to write some code. We'll be using 
+      a(href='http://codepen.io') CodePen
+      |  to collaborate in-class so go there and setup an account. I'll share the URL to the class exercises at the beginning of each class.
+    br
+    ol
+      li Tools &amp; Vocabulary
+      li History of Javascript
+      li Variables
+      li Conditionals
+      li Functions
+
+  div.page-header
+    h2 Homework
+
+  div.alert.alert-warning
+    p
+      strong Homework is due at the beginning of class, the following week.
+      br
+      | Please send your work, as either attached file(s) or a Codepen link to... 
+      em tcmacdonald [at] gmail [dot] com
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='http://codepen.io/tcmacdonald/pen/MKbvGB?editors=001')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #1:
+      |  Fun With Strings
+    div.panel-body
+      ol
+        li Store the following in variables: number of children, partner's name, geographic location, job title.
+        li
+          | Output a sentence to the console, ala: 
+          i.text-warning "You will be a X in Y, and married to Z with N kids."
+        li Feel free to change the string to whatever is appropriate for you.
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='http://codepen.io/tcmacdonald/pen/vLyeJJ?editors=001')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #2:
+      |  Fun with Numbers
+    div.panel-body
+      ol
+        li Write a function called <code>square_number</code> that will take one argument (a number), square that number, and return the result. It should also log a string like <strong>"The result of squaring the number 3 is 9."</strong>
+        li Write a function called <code>half_number</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like <strong>"Half of 5 is 2.5."</strong>.
+        li Write a function called <code>percent_of</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like <strong>"2 is 50% of 4."</strong>
+        li Write a function called <code>area_of_circle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like <strong>"The area for a circle with radius 2 is 12.566370614359172."</strong>
+        li <i>Bonus: Round the result so there are only two digits after the decimal.</i>
+  //p <i>See solution below...</i>
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='http://codepen.io/tcmacdonald/pen/vLyeJJ?editors=001')
+        i.fa.fa-codepen
+        |  View Solution
+      strong Task #3:
+      |  The Calculator
+    div.panel-body
+      p Write a function called <code>calculate</code> that will take one argument (a number) and perform the following operations, using the functions you wrote earlier...
+      ol
+        li Take half of the number and store the result.
+        li Square the result of #1 and store that result.
+        li Calculate the area of a circle with the result of #2 as the radius.
+        li Calculate what percentage that area is of the squared result (#3).
+  //br
+  //| <a class="jsbin-embed" href="http://jsbin.com/girifo/38/edit?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+
+
+// -
+
+
