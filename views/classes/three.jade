@@ -1,0 +1,73 @@
+extends ../layouts/application.jade
+
+block content
+  h1.sr-only Introduction to jQuery: The Swiss Army Knife
+  div.page-header
+    h2 Class #3: So About This Jquery...
+
+  p.lead jQuery is a veritable swiss-army knife for the informed online-engineeer. It's aim is to make your life easier by providing a consistent, well-documented API on everything from animation to event-handling. This week, we'll learn how we can use jQuery to save on nuerological computations when selecting and manipulating DOM elements.
+
+  p
+    a.btn.btn-info
+      i.fa.fa-picture-o
+      |  &nbsp;View Slides
+    | &nbsp;&nbsp;
+    a.btn.btn-warning.disabled
+      i.fa.fa-codepen
+      |  &nbsp;View Codepen
+
+  // -
+    div.page-header
+      h2 Class Overview
+
+    p
+      | Please come to class with your laptop and
+      em  don't forget the power cord
+      | . Be prepared to write some code. We'll be using 
+      a(href='http://codepen.io') CodePen
+      |  to collaborate in-class so go there and setup an account. I'll share the URL to the class exercises at the beginning of each class.
+    br
+    ol
+      li Tools &amp; Vocabulary
+      li History of Javascript
+      li Variables
+      li Conditionals
+      li Functions
+
+  div.page-header
+    h2 Homework
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='#')
+        i.fa.fa-codepen
+        |  view solution
+      strong Task #1:
+      |  Logo Hijack
+    div.panel-body
+      ul
+        li open up <a href="http://google.com">google.com</a> in chrome and open up the console.
+        li find the google logo and store it in a variable.
+        li modify the source of the logo img so that it's a yahoo logo instead. (<a href="http://www.logostage.com/logos/yahoo.gif">http://www.logostage.com/logos/yahoo.gif</a>)
+        li find the google search button and store it in a variable.
+        li modify the text of the button so that it says "yahooo!" instead.
+        li take a screenshot for posterity!
+        li <i>hint: jquery isn't available so you'll have to get creative to target these elements.</i>
+
+  div.panel.panel-default
+    div.panel-heading
+      a.pull-right(href='#')
+        i.fa.fa-codepen
+        |  view solution
+      strong Task #2:
+      |  Grocery List
+    div.panel-body
+      ul
+        li Create a new <a href="http://codepen.io">Codepen</a> and add jQuery to the page.
+        li Add an empty <code>ul</code> element to the page.
+        li Add a <code>form</code> element containing one <code>input</code> field and a submit <code>button</code>.
+        li Attach a function to the <code>form</code>'s submit event which takes the value of <code>input</code> and appends it to the <code>ul</code>.
+        li <i>Hint: Each list item should be an <code>li</code> element.</i>
+        li <i>Bonus: Add a link to each list-item that when clicked, removes the parent <code>li</code> element.
+      //br
+      //| <a class="jsbin-embed" href="http://jsbin.com/nenasa/27/embed?js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.30.3"></script>

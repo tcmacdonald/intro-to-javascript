@@ -9,18 +9,23 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade');
 app.use(morgan('combined'));
 
-app.get(/homework\/(one|two|three)/, function(req,res) {
-  var id = req.params[0];
-  res.render('homework/' + id, { title: 'Intro to Javascript', subtitle: 'Homework for Class ' + id });
-});
-
 app.get(/classes\/(one|two|three|four)/, function(req,res) {
   var id = req.params[0];
-  res.render('class', { data: '/data/class-' + id + '.md' });
+  res.render('classes/' + id, { id: id, title: 'Class ' + id });
+});
+
+app.get(/homework\/(one|two|three)/, function(req,res) {
+  var id = req.params[0];
+  res.render('homework/' + id, { id: id, title: 'Homework for Class ' + id });
+});
+
+app.get(/slides\/(one|two|three|four)/, function(req,res) {
+  var id = req.params[0];
+  res.render('slides', { id: id, data: '/data/class-' + id + '.md' });
 });
 
 app.get('/', function (req,res) {
-  res.render('index', { title: 'Intro to Javascript' });
+  res.render('index', { id: 'overview' });
 });
 
 
