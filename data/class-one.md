@@ -70,7 +70,7 @@ Some highlights include...
 
 * __Browser:__ [google.com/chrome](http://www.google.com/chrome/)
 * __Editor:__ [sublimetext.com/3](http://www.sublimetext.com/3)
-* __Interactive Console:__ [jsbin.com](http://jsbin.com/)
+* __Interactive Console:__ [codepen.io](http://codepen.io/)
 
 <br>
 
@@ -371,13 +371,13 @@ If there's no src attribute, the browser will execute any Javascript contained i
 
 ---
 
-## What is JSBin?
+## What is Codepen?
 
 * Playground for front-end code
 * Experiment with HTML, CSS & JS
 * Save and share your scripts
 
-![jsbin.com](/images/jsbin-start.png) <!-- .element: class="no-border" -->
+![codepen.io](/images/codepen-start.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -385,7 +385,7 @@ If there's no src attribute, the browser will execute any Javascript contained i
 
 * Each line in JavaScript is an instruction
 * Every instruction ends with a semicolon
-* Try executing the following on [jsbin.com](http://jsbin.com)
+* Try executing the following on [codepen.io](http://codepen.io)
 
 ![jsbin.com](/images/hello-world.png) <!-- .element: class="no-border" -->
 
@@ -590,7 +590,7 @@ An example...
 
     var apples = 1;
     if (apples < 2) {
-      console.log("Buy more apples!");
+      document.write("Buy more apples!");
     }
 
 
@@ -623,7 +623,7 @@ Evaluate two conditions at once with two ampersands (`&&`)
     var oranges = 2;
 
     if (apples > 3 && oranges > 3) {
-      console.log('Eat fruit!');
+      document.write('Eat fruit!');
     }
 
 ---
@@ -638,11 +638,11 @@ Evaluate two conditions at once with two ampersands (`&&`)
 
 
     if (apples < 2 || oranges < 2) {
-      console.log('Buy fruit!');
+      document.write('Buy fruit!');
     }
 
     if ( !(apples >= 0) ) {
-      console.log('You have negative apples??');
+      document.write('You have negative apples??');
     }
 
 ---
@@ -654,9 +654,9 @@ Use `else` to perform an alternative action&hellip;
     var apples = 5;
     
     if (apples > 3){
-      console.log('Eat an apple!');
+      document.write('Eat an apple!');
     } else {
-      console.log('Buy an apple!');
+      document.write('Buy an apple!');
     }
 
 ---
@@ -668,13 +668,13 @@ You can use `else if` to have multiple choices
     var age = 20;
     
     if (age >= 35) {
-      console.log('You can vote AND hold any place in government!');
+      document.write('You can vote AND hold any place in government!');
     } else if (age >= 25) {
-      console.log('You can vote AND run for the Senate!');
+      document.write('You can vote AND run for the Senate!');
     } else if (age >= 18) {
-      console.log('You can vote!');
+      document.write('You can vote!');
     } else {
-      console.log('You have no voice in government (yet)!');
+      document.write('You have no voice in government (yet)!');
     }
 
 ---
@@ -700,7 +700,7 @@ Add an `if/else` statement to our lifetime supply calculator so that if the life
 Declare a function
 
     function hello() {
-      console.log('Hi!');
+      document.write('Hi!');
     }
 
 Call the function&hellip;
@@ -715,7 +715,7 @@ Functions can take named arguments
 
 
     function hello(name) {
-      console.log('Hi' + name + '!');
+      document.write('Hi' + name + '!');
     }
 
 Call the function&hellip;
@@ -734,7 +734,7 @@ Functions can take MULTIPLE named arguments
 
     function add_numbers(num1, num2){
       var result = num1 + num2;
-      console.log(result);
+      document.write(result);
     }
 
 Call the function&hellip;
@@ -760,7 +760,7 @@ Functions can return a value
 For example&hellip;
 
     var sum  = add_numbers(5, 6);
-    console.log(sum);
+    document.write(sum);
 
 ---
 
@@ -789,7 +789,7 @@ A variable with "local" scope:
 For example&hellip;
 
     var sum  = add_numbers(5, 6);
-    console.log(result);  // yields 'undefined'
+    document.write(result);  // yields 'undefined'
 
 ---
 
@@ -806,7 +806,7 @@ A variable with "global" scope:
 For example&hellip;
 
     var sum  = add_numbers(5, 6);
-    console.log(result); // yields '11'
+    document.write(result); // yields '11'
 
 ---
 
