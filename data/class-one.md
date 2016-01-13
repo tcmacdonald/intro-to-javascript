@@ -5,7 +5,7 @@
 # Intro to Javascript <small class="gray">Class #1</small>
 
 ### Taylor C. MacDonald  <!-- .element: class="dark" -->
-http://gdi.tcmacdonald.com
+http://js.gdicincy.com
 
 ---
 

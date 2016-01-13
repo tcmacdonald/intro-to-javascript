@@ -5,7 +5,7 @@
 # Intro to Javascript <small class="gray" style="font-size: 50%;">jQuery Insanity:<br>Selector Boogaloo</small>
 
 ### Taylor C. MacDonald  <!-- .element: class="dark" -->
-http://gdi.tcmacdonald.com
+http://js.gdicincy.com
 
 ---
 
