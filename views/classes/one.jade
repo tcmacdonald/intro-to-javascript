@@ -7,14 +7,25 @@ block content
 
   p.lead This week, we'll discuss the origins of the language and experiment with some fundamental concepts applicable to most modern programming languages.
 
-  p
-    a.btn.btn-info(href='/slides/one')
-      i.fa.fa-picture-o
-      |  &nbsp;View Slides
+  p.form-inline
+    div.btn-group
+      a.btn.btn-info(href='/slides/one')
+        i.fa.fa-picture-o
+        |  &nbsp;View Slides
     | &nbsp;&nbsp;
-    a.btn.btn-warning(href='http://codepen.io/tcmacdonald/professor/41e34ae12a312d48a6816a6500fd3d1c/')
-      i.fa.fa-codepen
-      |  &nbsp;View Codepen
+    div.btn-group
+      button.btn.btn-warning.dropdown-toggle(data-toggle="dropdown")
+        | In-Class Exercises&nbsp;
+        span.caret
+      ul.dropdown-menu
+        li
+          a(href='http://codepen.io/tcmacdonald/pen/EPvREL?editors=001')
+            i.fa.fa-codepen
+            | &nbsp;A Simple Function
+          a(href='http://codepen.io/tcmacdonald/pen/41e34ae12a312d48a6816a6500fd3d1c?editors=101')
+            i.fa.fa-codepen
+            | &nbsp;Lifetime Supply Calculator
+
 
   // -
     div.page-header
