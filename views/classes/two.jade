@@ -15,9 +15,18 @@ block content
       i.fa.fa-picture-o
       |  &nbsp;View Slides
     | &nbsp;&nbsp;
-    a.btn.btn-warning.disabled
-      i.fa.fa-codepen
-      |  &nbsp;View Codepen
+    div.btn-group
+      button.btn.btn-warning.dropdown-toggle(data-toggle="dropdown")
+        | In-Class Exercises&nbsp;
+        span.caret
+      ul.dropdown-menu
+        li
+          a(href='http://codepen.io/tcmacdonald/pen/OMzZZj?editors=001')
+            i.fa.fa-codepen
+            | &nbsp;Favorite Foods
+          a(href='http://codepen.io/tcmacdonald/pen/LGemgG?editors=001')
+            i.fa.fa-codepen
+            | &nbsp;List of Recipes
 
   div.page-header
     h2 Homework
