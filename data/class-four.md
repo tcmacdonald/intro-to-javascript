@@ -136,14 +136,6 @@ You can select by attributes that equal a specific value.
 
 ## Selectors
 
-You can select elements who's attributes contain a specific value.
-
-![Jquery Selectors](/images/jquery-select-contains.png) <!-- .element: class="no-border" -->
-
----
-
-## Selectors
-
 You can select elements who's attributes begin with a specific value.
 
 ![Jquery Selectors](/images/jquery-select-starts-with.png) <!-- .element: class="no-border" -->
@@ -155,6 +147,14 @@ You can select elements who's attributes begin with a specific value.
 You can select elements who's attributes end with a specific value.
 
 ![Jquery Selectors](/images/jquery-select-ends-with.png) <!-- .element: class="no-border" -->
+
+---
+
+## Selectors
+
+You can select elements that contain a specific value.
+
+![Jquery Selectors](/images/jquery-select-contains.png) <!-- .element: class="no-border" -->
 
 ---
 
@@ -203,22 +203,6 @@ Once you've selected an element, you can access that element's `.parents()`, `.c
 
 ## Traversing the DOM
 
-You can get just the element's immediate `.parent()`
-
-![Traversing the DOM](/images/jquery-traverse-parent.png) <!-- .element: class="no-border" -->
-
----
-
-## Traversing the DOM
-
-You can get the descendants of an element, by passing a selector to `.find()`
-
-![Traversing the DOM](/images/jquery-traverse-find.png) <!-- .element: class="no-border" -->
-
----
-
-## Traversing the DOM
-
 You can grab the `.first()` or `.last()` element in a collection returned by jQuery.
 
 ![Traversing the DOM](/images/jquery-traverse-first-last.png) <!-- .element: class="no-border" -->
@@ -238,6 +222,22 @@ You can use `.next()` to get the next, immediate sibling of an element.
 You can use `.prev()` to get the previous, immediate sibling of an element.
 
 ![Traversing the DOM](/images/jquery-traverse-prev.png) <!-- .element: class="no-border" -->
+
+---
+
+## Traversing the DOM
+
+You can get just the element's immediate `.parent()`
+
+![Traversing the DOM](/images/jquery-traverse-parent.png) <!-- .element: class="no-border" -->
+
+---
+
+## Traversing the DOM
+
+You can get the descendants of an element, by passing a selector to `.find()`
+
+![Traversing the DOM](/images/jquery-traverse-find.png) <!-- .element: class="no-border" -->
 
 ---
 
