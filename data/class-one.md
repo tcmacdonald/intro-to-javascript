@@ -371,23 +371,12 @@ If there's no src attribute, the browser will execute any Javascript contained i
 
 ---
 
-## What is Codepen?
-
-* Playground for front-end code
-* Experiment with HTML, CSS & JS
-* Save and share your scripts
-
-![codepen.io](/images/codepen-start.png) <!-- .element: class="no-border" -->
-
----
-
 ## Syntax
 
 * Each line in JavaScript is an instruction
 * Every instruction ends with a semicolon
-* Try executing the following on [codepen.io](http://codepen.io)
 
-![jsbin.com](/images/hello-world.png) <!-- .element: class="no-border" -->
+      document.write('Hello world!');
 
 ---
 
