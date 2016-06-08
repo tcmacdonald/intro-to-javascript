@@ -91,8 +91,11 @@ __JavaScript: The Good Parts__ - Douglas Crockford
 
 __JavaScript and JQuery__ - Jon Duckett
 
-
 ![Girl Develop It](/images/books.png) <!-- .element: class="no-border" -->
+
+---
+
+![Girl Develop It](/images/guide-v-good-parts.png)
 
 ---
 
