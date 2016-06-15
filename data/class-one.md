@@ -761,27 +761,11 @@ For example&hellip;
 _The location where you declare a variable will affect where it can be used within your code._
 
 <dl>
-  <dt>Local Scope</dt>
-  <dd>A variable declared inside a function is a local variable and is only accessible within the function.</dd>
-  <dt>Global Scope</dt>
-  <dd>A variable declared outside a function is a global variable, and its value is accessible throughout your program.</dd>
+  <dt>Global Scope</dt> <!-- .element: class="fragment" data-fragment-index="0" -->
+  <dd>A variable declared outside a function is a global variable, and its value is accessible throughout your program.</dd> <!-- .element: class="fragment" data-fragment-index="0" -->
+  <dt>Local Scope</dt> <!-- .element: class="fragment" data-fragment-index="1" -->
+  <dd>A variable declared inside a function is a local variable and is only accessible within the function.</dd> <!-- .element: class="fragment" data-fragment-index="1" -->
 </dl>
-
----
-
-## Local Scope
-
-A variable with "local" scope:
-
-    function add_numbers(num1, num2) {
-      var result = num1 + num2;
-      return result;
-    }
-
-For example&hellip;
-
-    var sum  = add_numbers(5, 6);
-    document.write(result);  // yields 'undefined'
 
 ---
 
@@ -799,6 +783,22 @@ For example&hellip;
 
     var sum  = add_numbers(5, 6);
     document.write(result); // yields '11'
+
+---
+
+## Local Scope
+
+A variable with "local" scope:
+
+    function add_numbers(num1, num2) {
+      var result = num1 + num2;
+      return result;
+    }
+
+For example&hellip;
+
+    var sum  = add_numbers(5, 6);
+    document.write(result);  // yields 'undefined'
 
 ---
 
